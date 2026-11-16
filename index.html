@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="عرض تفاعلي شامل لمنصة MailForge by Skillak: المشكلة والحل، الجمهور المستهدف، جميع وحدات المنتج، أدوات AI، المنافسون، رحلة المستخدم، التقنية، نموذج العمل وخارطة الطريق.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MailForge by Skillak — Interactive Project Showcase">
+  <meta property="og:description" content="القصة الكاملة لمنصة MailForge: من المشكلة إلى الحل، المنتج، الذكاء الاصطناعي، المنافسين، نموذج العمل وخطة التوسع.">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>MailForge by Skillak — العرض التفاعلي الشامل للمشروع</title>
+  <link rel="icon" type="image/png" href="assets/mailforge-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="noise"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="MailForge الرئيسية">
+      <img src="assets/mailforge-logo.png" data-media-slot="brandLogo" alt="MailForge logo">
+      <span class="brand-copy"><strong>MailForge</strong><small>by Skillak</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#story">القصة</a>
+      <a href="#problem-deep">المشكلة والحل</a>
+      <a href="#catalog">تفاصيل المنصة</a>
+      <a href="#ai">الذكاء الاصطناعي</a>
+      <a href="#competition">المنافسون</a>
+      <a href="#roadmap">المستقبل</a>
+    </nav>
+    
+    <a class="header-cta" href="https://mailforge-skillak.lovable.app" target="_blank" rel="noopener">استكشف المنصة <span>↗</span></a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> Product Story · MailForge 2.0</div>
+        <h1 id="hero-title"><span data-editable="heroTitleMain" data-edit-label="العنوان الرئيسي">كل رسالة لها رحلة.</span><br><span data-editable="heroTitleAccent" data-edit-label="السطر المميز في العنوان">وكل رحلة تستحق نظامًا.</span></h1>
+        <p class="hero-lead" data-editable="heroLead" data-edit-label="وصف الواجهة الرئيسية">من فوضى Gmail وملفات Excel إلى منظومة واحدة تساعد الأعمال العربية على تصميم حملاتها البريدية، تنظيم جمهورها، أتمتة المتابعة، وقراءة النتائج.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#story">ابدأ الرحلة <span>↓</span></a>
+          <a class="btn btn-ghost" href="https://mailforge-skillak.lovable.app" target="_blank" rel="noopener">زيارة النسخة الحالية <span>↗</span></a>
+        </div>
+        <div class="hero-chips">
+          <span>Arabic-first</span><span>RTL Workflow</span><span>Gmail & Outlook</span><span>AI-assisted</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-delay">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="floating-tag tag-top"><i>✦</i> Create · Send · Track</div>
+        <div class="hero-product-card">
+          <div class="product-card-top"><span class="window-dots"><b></b><b></b><b></b></span><span>MailForge Workspace</span><span class="live-pill">Product UI</span></div>
+          <img src="assets/dashboard-onboarding.png" data-media-slot="dashboardOnboarding" alt="لوحة تحكم MailForge مع خطوات تفعيل أول حملة" class="hero-screen">
+          <div class="hero-mini-row"><span><i class="mini-blue"></i> Campaigns</span><span><i class="mini-green"></i> Analytics</span><span><i class="mini-orange"></i> Automation</span></div>
+        </div>
+        <div class="floating-tag tag-bottom"><span class="spark">✧</span> من فكرة الحملة إلى تحليلها</div>
+        <div class="hero-glow"></div>
+      </div>
+      <a class="scroll-hint" href="#story"><span></span> اسحب لاكتشاف القصة</a>
+    </section>
+
+    <!-- STORY / PROBLEM -->
+    <section class="section section-story" id="story">
+      <div class="section-head reveal">
+        <div class="eyebrow">01 / The Story</div>
+        <h2><span data-editable="storyTitleMain" data-edit-label="عنوان فصل القصة">بدأت القصة من</span> <span data-editable="storyTitleAccent" data-edit-label="عنوان القصة المميز">مشكلة يومية.</span></h2>
+        <p data-editable="storyLead" data-edit-label="مقدمة المشكلة">البريد الإلكتروني قناة مهمة للتواصل مع العملاء، لكن إدارة حملاته قد تتحول إلى سلسلة من الأدوات والخطوات اليدوية المتفرقة.</p>
+      </div>
+      <div class="story-grid">
+        <div class="story-narrative reveal">
+          <div class="story-number">01</div>
+          <h3 data-editable="storyNarrativeTitle" data-edit-label="عنوان سرد المشكلة">تبدأ من صندوق البريد… ثم تتشعب الأدوات.</h3>
+          <p data-editable="storyNarrativeBody" data-edit-label="شرح المشكلة اليومية">تكتب الرسالة في مكان، وتجهز التصميم في مكان آخر، وتحتفظ بقائمة العملاء في جدول، ثم ترسل وتعود لتبحث عن النتائج وتتابع من لم يتفاعل.</p>
+          <p class="story-emphasis">ومع كل حملة، تتكرر الرحلة من البداية.</p>
+          <div class="story-quote" data-editable="storyQuote" data-edit-label="اقتباس القصة">«المشكلة ليست في إرسال رسالة؛ المشكلة في إدارة الرحلة التي تسبقها وتتبعها.»</div>
+        </div>
+        <div class="pain-board reveal reveal-delay">
+          <div class="pain-window">
+            <div class="pain-window-head"><span>أدوات متفرقة</span><span class="pain-alert">Work scattered <b>!</b></span></div>
+            <div class="tool-stack">
+              <div class="tool-card mail-tool"><span class="tool-icon">✉</span><div><b>Gmail / Outlook</b><small>كتابة وإرسال الرسائل</small></div><span class="tool-mark">01</span></div>
+              <div class="tool-card sheet-tool"><span class="tool-icon">▦</span><div><b>Excel / Sheets</b><small>قوائم وبيانات متفرقة</small></div><span class="tool-mark">02</span></div>
+              <div class="tool-card design-tool"><span class="tool-icon">✧</span><div><b>Design tools</b><small>تصميم وتعديل القوالب</small></div><span class="tool-mark">03</span></div>
+              <div class="tool-card report-tool"><span class="tool-icon">▥</span><div><b>Manual reports</b><small>متابعة وقياس يدوي</small></div><span class="tool-mark">04</span></div>
+            </div>
+            <div class="pain-lines"><span></span><span></span><span></span></div>
+            <div class="pain-footer"><b>النتيجة</b><span>وقت مهدور · خطوات مكررة · رؤية غير مكتملة</span></div>
+          </div>
+          <div class="pain-orb orb-a"></div><div class="pain-orb orb-b"></div>
+        </div>
+      </div>
+      <div class="problem-cards reveal">
+        <article class="problem-card"><div class="card-icon">⌁</div><h3>العمل اليدوي</h3><p>إعادة تنفيذ نفس خطوات الإرسال والمتابعة في كل حملة.</p></article>
+        <article class="problem-card"><div class="card-icon">▤</div><h3>بيانات مبعثرة</h3><p>جهات الاتصال موزعة بين جداول وملفات وقوائم مختلفة.</p></article>
+        <article class="problem-card"><div class="card-icon">RTL</div><h3>تجربة عربية غير مريحة</h3><p>الحاجة إلى قوالب ومحرر يراعي اتجاه الكتابة من اليمين لليسار.</p></article>
+        <article class="problem-card"><div class="card-icon">◉</div><h3>رؤية محدودة</h3><p>صعوبة ربط الإرسال بالتفاعل والمتابعة والتحسين.</p></article>
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="section solution-section" id="solution">
+      <div class="section-head center reveal">
+        <div class="eyebrow">02 / The Shift</div>
+        <h2><span data-editable="solutionTitleMain" data-edit-label="عنوان الحل">من أدوات متفرقة إلى</span> <span data-editable="solutionTitleAccent" data-edit-label="عنوان الحل المميز">منظومة واحدة.</span></h2>
+        <p data-editable="solutionLead" data-edit-label="وصف الحل">MailForge لا تستبدل البريد الإلكتروني؛ بل تضيف طبقة لإدارة التسويق عبره بصورة منظمة.</p>
+      </div>
+      <div class="shift-visual reveal">
+        <div class="shift-side old-side"><div class="shift-label">Before</div><h3>كل خطوة في مكان</h3><div class="old-icons"><span>✉</span><span>▦</span><span>✧</span><span>▥</span></div><p>كتابة · قوائم · تصميم · تقارير</p></div>
+        <div class="shift-arrow"><span>→</span><small>One workflow</small></div>
+        <div class="shift-side new-side"><div class="shift-label">With MailForge</div><h3>رحلة واحدة مترابطة</h3><div class="new-workflow"><span>Audience</span><i>→</i><span>Create</span><i>→</i><span>Send</span><i>→</i><span>Analyze</span></div><p>من الإنشاء إلى التحسين، داخل مساحة عمل واحدة.</p></div>
+      </div>
+      <div class="pillars reveal">
+        <div><b>01</b><strong>صمّم</strong><span>Templates & Studio</span></div>
+        <div><b>02</b><strong>نظّم</strong><span>Contacts & Segments</span></div>
+        <div><b>03</b><strong>أتمت</strong><span>Automation & Resend</span></div>
+        <div><b>04</b><strong>حلّل</strong><span>Analytics & Insights</span></div>
+      </div>
+    </section>
+
+
+    <!-- DEEP PROBLEM ANALYSIS -->
+    <section class="section deep-section problem-deep-section" id="problem-deep">
+      <div class="section-head reveal">
+        <div class="eyebrow">03 / Problem Architecture</div>
+        <h2><span data-editable="deepProblemTitleMain" data-edit-label="عنوان تحليل المشكلة">المشكلة ليست إرسال بريد واحد؛</span> <span data-editable="deepProblemTitleAccent" data-edit-label="عنوان المشكلة المميز">بل إدارة النظام كله.</span></h2>
+        <p data-editable="deepProblemLead" data-edit-label="مقدمة تحليل المشكلة">تتعامل MailForge مع نقاط احتكاك متتابعة في دورة التسويق عبر البريد. كل نقطة تبدو صغيرة بمفردها، لكنها تتحول إلى وقت ضائع وأخطاء وتجربة غير مترابطة عندما تتوزع على أدوات مختلفة.</p>
+      </div>
+      <div class="problem-solution-grid">
+        <article class="ps-card reveal"><span class="ps-index">01</span><div class="ps-icon">⏱</div><h3>تكرار العمل اليدوي</h3><p>في كل حملة يعيد الفريق كتابة الرسالة، وتجهيز القائمة، ونسخ البيانات، وجدولة التذكيرات، وتجميع النتائج. هذا يجعل العملية بطيئة ويجعلها معتمدة على ذاكرة الموظف.</p><div class="ps-fix"><b>كيف تعالجها MailForge؟</b><span>قوالب قابلة لإعادة الاستخدام، حملات مجدولة، متغيرات شخصية، وسلاسل Automation تقلل تكرار الخطوات.</span></div></article>
+        <article class="ps-card reveal"><span class="ps-index">02</span><div class="ps-icon">▤</div><h3>قوائم وبيانات متفرقة</h3><p>جهات الاتصال تتوزع بين ملفات CSV وExcel وGoogle Sheets وأجهزة أعضاء الفريق، مع اختلاف تنسيق الأعمدة وتكرار السجلات وصعوبة معرفة حالة الاشتراك.</p><div class="ps-fix"><b>كيف تعالجها MailForge؟</b><span>استيراد CSV ومطابقة الحقول، Groups وTags، متغيرات مخصصة، وسجل استبعاد وإلغاء اشتراك.</span></div></article>
+        <article class="ps-card reveal"><span class="ps-index">03</span><div class="ps-icon">RTL</div><h3>تجربة عربية تحتاج عناية</h3><p>قد يحتاج المسوق إلى إصلاح اتجاه النص والأزرار والمحاذاة والخطوط يدويًا، خصوصًا عند الجمع بين العربية والإنجليزية داخل الرسالة الواحدة.</p><div class="ps-fix"><b>كيف تعالجها MailForge؟</b><span>تجربة عربية وRTL في الواجهة والمحرر، مع قوالب عربية وأدوات ترجمة وتكييف للمحتوى.</span></div></article>
+        <article class="ps-card reveal"><span class="ps-index">04</span><div class="ps-icon">🎯</div><h3>رسالة واحدة لجمهور مختلف</h3><p>إرسال الرسالة نفسها لكل المشتركين يقلل ملاءمة المحتوى، وقد يؤدي إلى تجاهل الرسائل أو ارتفاع إلغاء الاشتراك.</p><div class="ps-fix"><b>كيف تعالجها MailForge؟</b><span>تقسيم الجمهور إلى Groups وSegments، وتخصيص الرسائل بالمتغيرات، واقتراح الشريحة المناسبة بمساعدة AI.</span></div></article>
+        <article class="ps-card reveal"><span class="ps-index">05</span><div class="ps-icon">✍</div><h3>صعوبة إنتاج محتوى مستمر</h3><p>اختيار العنوان وكتابة النص وصياغة CTA وتصميم الرسالة يتطلب مهارات ووقتًا، وقد يتوقف إطلاق الحملة لأن الفريق لا يعرف من أين يبدأ.</p><div class="ps-fix"><b>كيف تعالجها MailForge؟</b><span>AI Campaign Planner وContent Generator وSubject Line وCTA وTemplate Designer للمساعدة داخل نفس المسار.</span></div></article>
+        <article class="ps-card reveal"><span class="ps-index">06</span><div class="ps-icon">↻</div><h3>متابعة لا تنتهي يدويًا</h3><p>بعد الإرسال يحتاج الفريق إلى معرفة من تفاعل، ومن يحتاج رسالة متابعة، ومتى يجب التواصل مرة أخرى. من دون نظام واضح قد تسقط فرص مهمة.</p><div class="ps-fix"><b>كيف تعالجها MailForge؟</b><span>Drip Sequences وBehavior Triggers وSmart Resend ضمن سيناريوهات يحددها المستخدم ويراجعها.</span></div></article>
+        <article class="ps-card reveal"><span class="ps-index">07</span><div class="ps-icon">▥</div><h3>أرقام دون قرار واضح</h3><p>قد تعرض أدوات الإرسال عدد الرسائل، لكن الفريق يحتاج إلى فهم النقرات والروابط والارتداد والتوقيت، ثم تحويل ذلك إلى تحسين عملي.</p><div class="ps-fix"><b>كيف تعالجها MailForge؟</b><span>تحليلات عامة ونتائج لكل حملة، مع AI Performance Analyst لتلخيص المؤشرات واقتراح أسئلة التحسين.</span></div></article>
+        <article class="ps-card reveal"><span class="ps-index">08</span><div class="ps-icon">▦</div><h3>فوضى العمل بين الفريق والعملاء</h3><p>عند مشاركة حسابات وقوائم وقوالب بين أعضاء الفريق أو إدارة أكثر من عميل، ترتفع احتمالات الخلط والأخطاء وتجاوز الصلاحيات.</p><div class="ps-fix"><b>كيف تعالجها MailForge؟</b><span>أدوار Owner وAdmin وEditor وViewer، مع Agency Workspaces لتنظيم بيئة كل عميل.</span></div></article>
+      </div>
+      <div class="solution-equation reveal"><span>Scattered tools</span><i>+</i><span>Manual work</span><i>+</i><span>Limited insight</span><b>→</b><strong>One connected workflow</strong></div>
+    </section>
+
+    <!-- TARGET USERS -->
+    <section class="section audience-section" id="audience">
+      <div class="section-head reveal">
+        <div class="eyebrow">04 / Who It Serves</div>
+        <h2><span data-editable="audienceTitleMain" data-edit-label="عنوان الجمهور المستهدف">منتج واحد،</span> <span data-editable="audienceTitleAccent" data-edit-label="عنوان الجمهور المميز">رحلات عمل مختلفة.</span></h2>
+        <p>كل نشاط يرسل رسائل لأسباب مختلفة. لذلك نعرض الاستخدامات الممكنة، مع اعتبار مراكز التدريب والأكاديميات نقطة دخول سوق مقترحة تحتاج إلى تحقق ميداني.</p>
+      </div>
+      <div class="audience-layout reveal">
+        <div class="audience-tabs" role="tablist" aria-label="القطاعات المستهدفة">
+          <button class="audience-tab active" data-audience="training" role="tab" aria-selected="true"><span>🎓</span><b>مراكز التدريب</b><small>القطاع الأول المقترح</small></button>
+          <button class="audience-tab" data-audience="agency" role="tab" aria-selected="false"><span>🏢</span><b>وكالات التسويق</b><small>إدارة عدة عملاء</small></button>
+          <button class="audience-tab" data-audience="smb" role="tab" aria-selected="false"><span>💼</span><b>الشركات الصغيرة</b><small>تواصل وعلاقات مستمرة</small></button>
+          <button class="audience-tab" data-audience="creator" role="tab" aria-selected="false"><span>✍️</span><b>المدربون وصناع المحتوى</b><small>نشرات ومتابعات</small></button>
+          <button class="audience-tab" data-audience="ecommerce" role="tab" aria-selected="false"><span>🛍️</span><b>المتاجر الإلكترونية</b><small>عروض وإعادة تواصل</small></button>
+          <button class="audience-tab" data-audience="services" role="tab" aria-selected="false"><span>🤝</span><b>شركات الخدمات B2B</b><small>عملاء محتملون ومتابعة</small></button>
+        </div>
+        <div class="audience-detail" role="tabpanel" aria-live="polite">
+          <div class="audience-detail-top"><span class="audience-kicker" id="audienceKicker">Initial market wedge</span><span class="audience-index" id="audienceIndex">01 / 04</span></div>
+          <h3 id="audienceTitle">مركز التدريب لا يرسل إعلانًا فقط؛ بل يدير رحلة الطالب.</h3>
+          <p id="audienceDesc">من أول تسجيل وحتى التقييم والدورة التالية، تتكرر نقاط التواصل. MailForge تساعد على تنظيم هذه الرسائل وربطها بقوائم الطلاب والشرائح وسيناريوهات المتابعة.</p>
+          <div class="audience-flow" id="audienceFlow"><span>تسجيل</span><i>→</i><span>ترحيب</span><i>→</i><span>تذكير</span><i>→</i><span>متابعة</span><i>→</i><span>تقييم</span></div>
+          <div class="audience-usecases" id="audienceUsecases"><span>Course announcements</span><span>Payment reminders</span><span>Attendance follow-up</span><span>Feedback</span></div>
+        </div>
+      </div>
+      <div class="focus-note reveal"><span>✦</span><p><b>التركيز الاستراتيجي:</b> البدء بمراكز التدريب والأكاديميات هو فرضية دخول سوق قابلة للاختبار، وليس ادعاءً بأن المنصة لا تخدم قطاعات أخرى.</p></div>
+    </section>
+
+
+    <!-- INDUSTRY PLAYBOOKS -->
+    <section class="section deep-section playbooks-section" id="use-cases">
+      <div class="section-head center reveal">
+        <div class="eyebrow">05 / Industry Playbooks</div>
+        <h2><span data-editable="playbookTitleMain" data-edit-label="عنوان حالات الاستخدام">المميزات نفسها،</span> <span data-editable="playbookTitleAccent" data-edit-label="عنوان الاستخدامات المميز">لكن كل قطاع له رحلة مختلفة.</span></h2>
+        <p>هذه أمثلة عملية لكيفية توظيف وحدات MailForge. هي سيناريوهات استخدام يمكن إعدادها داخل المنصة؛ ولا تعني وجود تكامل تلقائي مع كل نظام خارجي.</p>
+      </div>
+      <div class="playbook-grid">
+        <article class="playbook-card featured reveal"><div class="playbook-top"><span class="playbook-icon">🎓</span><span class="playbook-label">Initial market focus</span></div><h3>مراكز التدريب والأكاديميات</h3><p>تنظيم التواصل مع الطالب من الاهتمام والتسجيل إلى ما بعد انتهاء الدورة.</p><div class="journey-chain"><span>مهتم</span><i>→</i><span>تسجيل</span><i>→</i><span>ترحيب</span><i>→</i><span>تذكير</span><i>→</i><span>شهادة</span><i>→</i><span>تقييم</span></div><ul><li>إعلانات البرامج والدورات الجديدة.</li><li>تأكيد التسجيل ومعلومات البرنامج.</li><li>تذكير بمواعيد الجلسات والمتابعة.</li><li>رسائل إكمال الدورة والشهادة والتقييم.</li><li>إعادة التواصل مع الخريجين للدورات التالية.</li></ul><div class="playbook-tools">Templates · Variables · Automation · Segments · Analytics</div></article>
+        <article class="playbook-card reveal"><div class="playbook-top"><span class="playbook-icon">🛍️</span><span class="playbook-label">Expansion segment</span></div><h3>المتاجر الإلكترونية</h3><p>حملات العروض والنشرات وتحديثات العملاء، مع إمكان بناء شرائح وفق البيانات المتاحة.</p><div class="journey-chain"><span>اشتراك</span><i>→</i><span>عرض</span><i>→</i><span>تفاعل</span><i>→</i><span>إعادة تواصل</span></div><ul><li>إعلان منتج أو مجموعة جديدة.</li><li>عروض موسمية ونشرات دورية.</li><li>شرائح العملاء النشطين وغير النشطين.</li><li>متابعة المهتمين بالعروض وفق سلوك مسجل.</li></ul><div class="playbook-tools">Campaigns · Contacts · Segmentation · AI Copy · Analytics</div><small>تكاملات بيانات المتجر والأحداث الشرائية تحتاج إلى تكامل مناسب؛ لا يفترضها هذا العرض تلقائيًا.</small></article>
+        <article class="playbook-card reveal"><div class="playbook-top"><span class="playbook-icon">🏢</span><span class="playbook-label">Agency segment</span></div><h3>وكالات التسويق والمستقلون</h3><p>مساحة مركزية لإدارة حملات عدة عملاء مع فصل بيانات كل Workspace.</p><div class="journey-chain"><span>عميل</span><i>→</i><span>Workspace</span><i>→</i><span>حملة</span><i>→</i><span>تقرير</span></div><ul><li>Workspaces منفصلة للعملاء.</li><li>فصل القوائم والقوالب والحملات.</li><li>توزيع المهام والصلاحيات.</li><li>مراجعة النتائج لكل عميل.</li></ul><div class="playbook-tools">Agency · Team · Templates · Campaigns · Analytics</div></article>
+        <article class="playbook-card reveal"><div class="playbook-top"><span class="playbook-icon">💼</span><span class="playbook-label">SMB</span></div><h3>الشركات الصغيرة والمتوسطة</h3><p>توحيد التواصل الدوري مع العملاء والمهتمين دون إدارة كل خطوة يدويًا.</p><div class="journey-chain"><span>قائمة</span><i>→</i><span>تقسيم</span><i>→</i><span>رسالة</span><i>→</i><span>متابعة</span></div><ul><li>تحديثات العملاء والإعلانات.</li><li>رسائل ترحيب ونشرات دورية.</li><li>متابعة المهتمين بعروض الخدمات.</li><li>مقارنة نتائج الحملات.</li></ul><div class="playbook-tools">Contacts · Compose · Campaigns · Automation · Reports</div></article>
+        <article class="playbook-card reveal"><div class="playbook-top"><span class="playbook-icon">✍️</span><span class="playbook-label">Creators & Coaches</span></div><h3>المدربون وصناع المحتوى</h3><p>تنظيم النشرة البريدية والتواصل مع الجمهور عند إطلاق محتوى أو دورة أو منتج.</p><div class="journey-chain"><span>اشتراك</span><i>→</i><span>نشرة</span><i>→</i><span>محتوى</span><i>→</i><span>دعوة</span></div><ul><li>رسائل ترحيب للمشتركين.</li><li>نشرات ومحتوى دوري.</li><li>إطلاق دورات وبرامج جديدة.</li><li>إعادة التواصل مع جمهور غير نشط.</li></ul><div class="playbook-tools">Forms · Templates · AI · Automation · Segments</div></article>
+        <article class="playbook-card reveal"><div class="playbook-top"><span class="playbook-icon">🤝</span><span class="playbook-label">B2B Services</span></div><h3>شركات الخدمات والأعمال B2B</h3><p>تنظيم التواصل مع العملاء المحتملين والعملاء الحاليين عبر رسائل شخصية أكثر اتساقًا.</p><div class="journey-chain"><span>Lead</span><i>→</i><span>تعريف</span><i>→</i><span>متابعة</span><i>→</i><span>تحديث</span></div><ul><li>رسائل تعريف بالخدمات.</li><li>متابعة استفسارات واهتمامات مسجلة.</li><li>تحديثات العملاء والنشرات.</li><li>تقسيم العملاء حسب القطاع أو الاهتمام.</li></ul><div class="playbook-tools">Variables · Segments · Sequences · Team · Analytics</div></article>
+      </div>
+    </section>
+
+    <!-- PLATFORM CAPABILITIES -->
+    <section class="section platform-section" id="platform">
+      <div class="section-head center reveal">
+        <div class="eyebrow">06 / Product Ecosystem</div>
+        <h2><span data-editable="platformTitleMain" data-edit-label="عنوان المنصة">كل طبقة تؤدي دورًا في</span> <span data-editable="platformTitleAccent" data-edit-label="عنوان المنصة المميز">رحلة الحملة.</span></h2>
+        <p>تتكون MailForge من وحدات مترابطة؛ يمكن للمستخدم أن يبدأ من القالب أو الجمهور أو الحملة، ثم ينتقل إلى بقية الرحلة.</p>
+      </div>
+      <div class="platform-grid">
+        <article class="cap-card cap-large reveal"><div class="cap-top"><span class="cap-icon blue">✉</span><span class="cap-num">01</span></div><h3>Campaign Management</h3><p>أنشئ الحملة، اختر الجمهور والقالب، راجع جاهزية الإرسال، ثم أطلق الحملة أو حدد موعدها.</p><div class="cap-tags"><span>Campaigns</span><span>Scheduling</span><span>Pre-send review</span><span>Send history</span></div><img class="cap-screenshot" src="assets/campaign-creation.png" data-media-slot="campaignCreation" alt="نافذة إنشاء حملة جديدة في MailForge"><div class="cap-visual campaign-visual"><div class="fake-line wide"></div><div class="fake-line"></div><div class="fake-progress"><i></i></div><div class="fake-progress short"><i></i></div></div></article>
+        <article class="cap-card reveal"><div class="cap-top"><span class="cap-icon violet">▧</span><span class="cap-num">02</span></div><h3>Templates & Studio</h3><p>مكتبة قوالب، محرر مرئي، كتل قابلة لإعادة الاستخدام، ومعاينة للموبايل والكمبيوتر.</p><div class="cap-tags"><span>Drag & Drop</span><span>HTML</span><span>JSON</span><span>Components</span></div><img class="cap-screenshot" src="assets/templates-gallery.png" data-media-slot="templatesGallery" alt="لقطة مكتبة القوالب"></article>
+        <article class="cap-card reveal"><div class="cap-top"><span class="cap-icon green">◎</span><span class="cap-num">03</span></div><h3>Audience Management</h3><p>استيراد CSV، مطابقة الحقول، مجموعات ووسوم، فلاتر ديناميكية، ومتغيرات مخصصة لإدارة الجمهور.</p><div class="cap-tags"><span>Contacts</span><span>Groups</span><span>Tags</span><span>Variables</span></div><img class="cap-screenshot" src="assets/contacts-management.png" data-media-slot="contactsManagement" alt="صفحة جهات الاتصال وإدارة الجمهور"></article>
+        <article class="cap-card reveal"><div class="cap-top"><span class="cap-icon orange">⌘</span><span class="cap-num">04</span></div><h3>Automation</h3><p>سلاسل بريدية متتابعة، مشغلات مرتبطة بالتفاعل، ومخطط لإنشاء مسارات حملات بمساعدة AI.</p><div class="cap-tags"><span>Drip sequences</span><span>Triggers</span><span>Smart Resend</span></div><img class="cap-screenshot" src="assets/automation-workflow.png" data-media-slot="automationWorkflow" alt="صفحة الأتمتة واختبارات العناوين"></article>
+        <article class="cap-card cap-large reveal"><div class="cap-top"><span class="cap-icon cyan">▥</span><span class="cap-num">05</span></div><h3>Analytics & Campaign Intelligence</h3><p>متابعة مؤشرات الإرسال والفتح والنقر والارتداد، تحليل الروابط، وتوقيت التفاعل لمساعدة المستخدم على تحسين حملاته.</p><div class="cap-tags"><span>Open & Click</span><span>Campaign reports</span><span>AI insights</span><span>Local time analytics</span></div><img class="cap-screenshot" src="assets/analytics-summary.png" data-media-slot="analyticsSummary" alt="ملخص التحليلات العامة في MailForge"><div class="mini-chart"><div class="chart-labels"><span>Performance</span><span>Last 30 days</span></div><svg viewBox="0 0 500 120" preserveAspectRatio="none" aria-label="رسم توضيحي لأداء حملة"><path d="M0 102 C40 100 55 85 90 92 S140 45 180 68 S235 95 270 80 S320 10 350 34 S400 80 430 48 S470 28 500 14" fill="none" stroke="#3987ff" stroke-width="3"/><path d="M0 102 C40 100 55 85 90 92 S140 45 180 68 S235 95 270 80 S320 10 350 34 S400 80 430 48 S470 28 500 14 L500 120 L0 120Z" fill="url(#chartFill)" opacity=".22"/><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#3987ff"/><stop offset="1" stop-color="#3987ff" stop-opacity="0"/></linearGradient></defs></svg></div></article>
+        <article class="cap-card reveal"><div class="cap-top"><span class="cap-icon red">♙</span><span class="cap-num">06</span></div><h3>Team & Agency</h3><p>أدوار وصلاحيات متعددة، دعوات للفريق، ومساحات عمل منفصلة لتنظيم عملاء الوكالات.</p><div class="cap-tags"><span>Owner</span><span>Admin</span><span>Editor</span><span>Viewer</span></div></article>
+        <article class="cap-card reveal"><div class="cap-top"><span class="cap-icon cyan">▣</span><span class="cap-num">07</span></div><h3>Media Library</h3><p>إدارة الصور والشعارات والملفات المستخدمة في الرسائل والقوالب، مع روابط قابلة للإدراج وإعادة الاستخدام.</p><div class="cap-tags"><span>Images</span><span>Documents</span><span>Reusable assets</span></div><img class="cap-screenshot" src="assets/media-library.png" data-media-slot="mediaLibrary" alt="مكتبة الوسائط والملفات"></article>
+      </div>
+      <div class="map-details reveal">
+        <button class="details-toggle" id="pagesToggle" aria-expanded="false"><span>استكشف خريطة صفحات المنصة كاملة</span><span class="toggle-plus">＋</span></button>
+        <div class="details-panel" id="pagesPanel" hidden>
+          <div class="page-group"><h4>الواجهة العامة</h4><p>الرئيسية · Showcase · المتجر · صفحة المنتج والدفع · تسجيل الدخول · نماذج الاشتراك · مراجعة الحملات · الشروط والخصوصية.</p></div>
+          <div class="page-group"><h4>مساحة عمل المستخدم</h4><p>Dashboard · Templates · Builder · Components · Compose · Emails · Campaigns · Campaign Results · Automation · Recipients · Variables · Analytics · Media · Activity · Sending · Team · Agency · Guide · Support · Privacy · Billing · Settings · Trash.</p></div>
+          <div class="page-group"><h4>لوحة الإدارة المركزية</h4><p>Branding & Splash · إدارة المستخدمين · Broadcast · Partners & Referrals · الدعم والتذاكر · المدفوعات والمتجر والتراخيص.</p></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- COMPLETE PRODUCT CATALOG -->
+    <section class="section deep-section catalog-section" id="catalog">
+      <div class="section-head reveal">
+        <div class="eyebrow">07 / Complete Product Inventory</div>
+        <h2><span data-editable="catalogTitleMain" data-edit-label="عنوان كتالوج المنتج">ما الموجود داخل MailForge؟</span> <span data-editable="catalogTitleAccent" data-edit-label="عنوان الكتالوج المميز">تفصيلًا، قسمًا بقسم.</span></h2>
+        <p>هذا فهرس وظيفي مستند إلى خريطة المنصة التي قدمتها: بوابة عامة، مساحة عمل للمستخدم، وبوابة إدارة مركزية. استخدم البحث والتصنيف لاستكشاف الأقسام.</p>
+      </div>
+      <div class="catalog-toolbar reveal">
+        <label class="catalog-search"><span>⌕</span><input id="moduleSearch" type="search" placeholder="ابحث عن صفحة أو ميزة…" aria-label="ابحث في صفحات MailForge"></label>
+        <div class="catalog-filters" role="group" aria-label="تصفية صفحات المنصة">
+          <button class="catalog-filter active" data-module-filter="all">كل الأقسام</button>
+          <button class="catalog-filter" data-module-filter="public">الواجهة العامة</button>
+          <button class="catalog-filter" data-module-filter="workspace">مساحة المستخدم</button>
+          <button class="catalog-filter" data-module-filter="admin">الإدارة المركزية</button>
+        </div>
+        <span class="catalog-count" id="catalogCount">37 وحدة موثقة</span>
+      </div>
+      <div class="catalog-groups">
+        <div class="catalog-group-head"><span>01</span><div><h3>الواجهة العامة والتجربة قبل تسجيل الدخول</h3><p>كل ما يتيح للزائر اكتشاف MailForge وتجربة العرض والاشتراك والشراء.</p></div></div>
+        <div class="module-grid">
+          <details class="module-card" data-module-type="public"><summary><span class="module-symbol">⌂</span><span><b>الرئيسية — /</b><small>Landing Page</small></span></summary><p>تعريف بالمنصة وقيمتها وطريقة الاستخدام، واستعراض المميزات وخيارات ربط Gmail وOutlook، والأسعار والأسئلة الشائعة.</p></details>
+          <details class="module-card" data-module-type="public"><summary><span class="module-symbol">▧</span><span><b>المعرض التفاعلي — /showcase</b><small>Product Showcase</small></span></summary><p>استعراض القوالب وواجهات المحرر وتجارب مبدئية للمنتج، لمساعدة الزائر على فهم شكل العمل قبل إنشاء حساب.</p></details>
+          <details class="module-card" data-module-type="public"><summary><span class="module-symbol">▣</span><span><b>المتجر الرقمي — /shop</b><small>Template & Digital Shop</small></span></summary><p>عرض حزم القوالب والمنتجات الرقمية، مع صفحات منتج منفصلة ومسار للشراء ومراجعة الطلب.</p></details>
+          <details class="module-card" data-module-type="public"><summary><span class="module-symbol">＄</span><span><b>المنتج والدفع — /product و/checkout</b><small>Product & Checkout</small></span></summary><p>تفاصيل المنتج أو حزمة القوالب، ثم إتمام الطلب ومراجعة الدفع وتفعيل الترخيص بعد الاعتماد.</p></details>
+          <details class="module-card" data-module-type="public"><summary><span class="module-symbol">↪</span><span><b>الدخول واستعادة الحساب — /auth</b><small>Authentication</small></span></summary><p>بوابة تسجيل الدخول والاشتراك واستعادة كلمة المرور، مع موفري المصادقة الذين يعتمدهم إعداد المنتج.</p></details>
+          <details class="module-card" data-module-type="public"><summary><span class="module-symbol">☷</span><span><b>نماذج الاشتراك — /f/$formId</b><small>Public Signup Forms</small></span></summary><p>نماذج عامة يمكن مشاركتها لجمع المشتركين وإضافتهم إلى الجمهور، مع تدابير لتقليل التسجيلات العشوائية وحماية النموذج.</p></details>
+          <details class="module-card" data-module-type="public"><summary><span class="module-symbol">✓</span><span><b>مراجعة الحملة — /review/$token</b><small>External Review</small></span></summary><p>رابط مراجعة للحملة يمكن مشاركته مع عميل أو مدير لإرسال ملاحظات أو اعتماد الحملة قبل إطلاقها. يجب ضبط انتهاء صلاحية الرموز وصلاحياتها.</p></details>
+          <details class="module-card" data-module-type="public"><summary><span class="module-symbol">§</span><span><b>الشروط والخصوصية — /terms و/privacy-policy</b><small>Legal Pages</small></span></summary><p>صفحات توضح شروط الاستخدام وسياسة الخصوصية ونطاقات البيانات والصلاحيات. وجود الصفحات لا يعني تلقائيًا تحقق امتثال قانوني كامل.</p></details>
+        </div>
+
+        <div class="catalog-group-head"><span>02</span><div><h3>مساحة عمل المستخدم — إدارة دورة البريد كاملة</h3><p>الوحدات التشغيلية التي يستخدمها المسوق أو صاحب النشاط يوميًا.</p></div></div>
+        <div class="module-grid">
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">▦</span><span><b>لوحة التحكم — /dashboard</b><small>Overview & Onboarding</small></span></summary><p>مؤشرات الإرسال والفتح والنقر والنشاط، اختصارات للإنشاء والاستيراد، وخطوات تهيئة تساعد المستخدم على إكمال أول حملة.</p><img src="assets/dashboard-onboarding.png" data-media-slot="dashboardOnboarding" alt="لوحة التحكم وخطوات تفعيل أول حملة" loading="lazy"></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">▤</span><span><b>القوالب — /templates</b><small>Template Library</small></span></summary><p>إدارة القوالب الشخصية والمحفوظة والمشتركة، تنظيم بالمجلدات والوسوم، بحث وتصفية، نسخ واستعادة، واستيراد HTML أو JSON أو البدء بمصمم الذكاء الاصطناعي.</p><img src="assets/templates-gallery.png" data-media-slot="templatesGallery" alt="معرض قوالب MailForge" loading="lazy"></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">✧</span><span><b>المحرر المرئي — /builder/$id</b><small>Drag & Drop Studio</small></span></summary><p>محرر Canvas لتجميع عناصر الرسالة وتعديل النصوص والأزرار والصور والفواصل والأعمدة، مع معاينة للموبايل والكمبيوتر ودعم متغيرات مثل {{first_name}} وأدوات مساعدة للكتابة.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">▧</span><span><b>المكونات — /components</b><small>Reusable Components</small></span></summary><p>حفظ أجزاء قابلة لإعادة الاستخدام مثل Header وFooter وأزرار CTA وتذييلات الاشتراك، ثم إدراجها في قوالب مختلفة لتوحيد الهوية وتقليل التكرار.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">➤</span><span><b>إنشاء رسالة — /compose</b><small>Quick Compose</small></span></summary><p>إرسال رسالة فردية أو اختبارية، تحديد وضع الرسالة الشخصي أو الترويجي، اختيار المرسل، إضافة CC أو BCC، إرفاق ملفات، ومعاينة أولية وفحوصات محتوى قبل الإرسال.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">✉</span><span><b>سجل الرسائل — /emails</b><small>Email Activity</small></span></summary><p>أرشيف الرسائل والمسودات وحالات الإرسال والقبول والفشل والتأجيل، مع البحث والتصدير أو الرجوع إلى سجل الرسالة.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">📣</span><span><b>الحملات — /campaigns</b><small>Campaign Manager</small></span></summary><p>إنشاء حملة باسم واضح، اختيار الجمهور والقالب، ضبط التوقيت والجدولة، معاينة الإعدادات، مراجعة تجهيز الحملة قبل الإرسال، ومقارنة الحملات أو اختبار عناوين A/B بحسب الوظائف المتاحة.</p><img src="assets/campaign-creation.png" data-media-slot="campaignCreation" alt="إنشاء حملة جديدة" loading="lazy"></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">▥</span><span><b>نتائج الحملة — /campaign-results/$id</b><small>Campaign Results</small></span></summary><p>قراءة مؤشرات كل حملة، حالات التسليم والفتح والنقر والارتداد وإلغاء الاشتراك، وتحليل الروابط، مع ملخص أو تقرير مدعوم بالذكاء الاصطناعي بحسب ما تم تفعيله.</p><img src="assets/campaign-results.png" data-media-slot="campaignResults" alt="نتائج الحملة" loading="lazy"></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">⌘</span><span><b>الأتمتة — /automation</b><small>Drip & Behavioral Workflows</small></span></summary><p>إنشاء سلاسل متتابعة، تحديد فواصل زمنية، ربط بعض الخطوات بتفاعل المستلم مثل الفتح أو النقر، واستخدام AI للمساعدة في إعداد مسار حملة.</p><img src="assets/automation-workflow.png" data-media-slot="automationWorkflow" alt="واجهة الأتمتة" loading="lazy"></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">◎</span><span><b>المستلمون — /recipients</b><small>Contacts & Audience</small></span></summary><p>استيراد وتصدير CSV/Excel، مطابقة الحقول، مجموعات وTags وفلاتر، اكتشاف التكرار وبعض أخطاء النطاقات، اقتراح الجمهور، سجل إلغاء الاشتراك والاستبعاد، وخيارات العمل مع Google Sheets بحسب التكامل المتاح.</p><img src="assets/contacts-management.png" data-media-slot="contactsManagement" alt="إدارة جهات الاتصال" loading="lazy"></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">{ }</span><span><b>المتغيرات — /variables</b><small>Personalization Fields</small></span></summary><p>تعريف حقول شخصية مثل اسم الطالب، اسم الدورة، تاريخ التجديد، رمز الخصم، أو اسم الشركة، ثم استخدامها داخل القوالب والحملات.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">▥</span><span><b>التحليلات — /analytics</b><small>Global Analytics</small></span></summary><p>نظرة عامة على الإرسال والفتح والنقر والارتداد وإلغاء الاشتراك، رسوم زمنية، توزيع حالات التسليم، نطاقات المستلمين، توقيت النشاط، وتحليل روابط النقر.</p><img src="assets/analytics-detailed.png" data-media-slot="analyticsDetailed" alt="تحليلات MailForge" loading="lazy"></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">▧</span><span><b>الوسائط — /media</b><small>Media Library</small></span></summary><p>رفع وإدارة الصور والملفات والشعارات المستخدمة في القوالب والرسائل، مع نسخ روابط الملفات وإعادة استخدامها. راجع إعدادات الوصول قبل وضع مستندات حساسة.</p><img src="assets/media-library.png" data-media-slot="mediaLibrary" alt="مكتبة الوسائط" loading="lazy"></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">⌁</span><span><b>سجل النشاط — /activity</b><small>Activity & Audit</small></span></summary><p>تتبع أنشطة الحساب مثل تسجيل الدخول والأجهزة وتعديلات الحملات وتغييرات الصلاحيات لدعم المراجعة والتدقيق.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">⇄</span><span><b>إعدادات الإرسال — /sending</b><small>Connected Mailboxes</small></span></summary><p>ربط حسابات Gmail/Google Workspace وOutlook/Microsoft عبر OAuth، متابعة الحصص الداخلية، إعداد نطاق التتبع المخصص، وفصل الحسابات المرسلة بحسب الاتصال.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">♙</span><span><b>الفريق والصلاحيات — /team</b><small>Team Management</small></span></summary><p>دعوة أعضاء الفريق وتوزيع أربعة أدوار موصوفة: Owner وAdmin وEditor وViewer، مع تقليل وصول الأعضاء إلى الإعدادات الحساسة وفق الصلاحيات.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">▦</span><span><b>وضع الوكالات — /agency</b><small>Agency Workspaces</small></span></summary><p>إنشاء مساحات عمل منفصلة لعملاء الوكالة، بهدف فصل الجمهور والقوالب والحملات وإدارة العملاء من حساب مركزي.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">⌕</span><span><b>الدليل — /guide</b><small>Knowledge Base</small></span></summary><p>إرشادات خطوة بخطوة حول ربط البريد واستيراد الجمهور وإنشاء القوالب والحملات وإدارة الحساب.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">☏</span><span><b>الدعم — /support</b><small>Support Tickets</small></span></summary><p>فتح تذاكر الدعم ومتابعة الحالة والردود، لتوثيق طلبات المساعدة بدل ضياعها في المحادثات المتفرقة.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">♢</span><span><b>الخصوصية والبيانات — /privacy</b><small>Data Controls</small></span></summary><p>إدارة خيارات الخصوصية، وتصدير بيانات الحساب وفق الوظائف المتاحة، ومراجعة معلومات البيانات والاحتفاظ بها.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">＄</span><span><b>الاشتراك والدفع — /billing</b><small>Billing & Plans</small></span></summary><p>عرض الخطة الحالية، الفواتير، حالة الاشتراك، وخيارات الترقية أو إدارة الدفع بحسب بوابات الدفع التي تم تفعيلها.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">⚙</span><span><b>الإعدادات — /settings</b><small>Account & Preferences</small></span></summary><p>إعداد اللغة العربية أو الإنجليزية، اتجاه RTL/LTR، المظهر الفاتح والداكن، تفضيلات الحساب والأمان، وتجربة الموبايل القابلة للتثبيت كتطبيق ويب PWA مع شاشة بداية واختصارات بحسب دعم المتصفح والجهاز.</p></details>
+          <details class="module-card" data-module-type="workspace"><summary><span class="module-symbol">⌫</span><span><b>سلة المهملات — /trash</b><small>Restore & Delete</small></span></summary><p>استعادة بعض العناصر المحذوفة قبل الحذف النهائي، وفق نوع العنصر وسياسة الحذف المعتمدة.</p></details>
+        </div>
+
+        <div class="catalog-group-head"><span>03</span><div><h3>بوابة الإدارة المركزية</h3><p>أدوات تشغيل المنصة وإدارة المستخدمين والخدمات والهوية والدعم.</p></div></div>
+        <div class="module-grid">
+          <details class="module-card" data-module-type="admin"><summary><span class="module-symbol">◈</span><span><b>إدارة الهوية — Branding & Splash</b><small>Branding Control</small></span></summary><p>إدارة اسم المنصة والشعار والألوان وعناصر شاشة البداية وتجربة التثبيت على الموبايل.</p></details>
+          <details class="module-card" data-module-type="admin"><summary><span class="module-symbol">♙</span><span><b>إدارة المستخدمين والحظر</b><small>User Administration</small></span></summary><p>استعراض حسابات المستخدمين وإدارة حالات التفعيل أو الإيقاف وفق دور الإدارة والسياسات التشغيلية.</p></details>
+          <details class="module-card" data-module-type="admin"><summary><span class="module-symbol">◉</span><span><b>البث الداخلي — Broadcast</b><small>Announcements</small></span></summary><p>إرسال إعلانات وتنبيهات داخل المنصة إلى المستخدمين أو مجموعات محددة بحسب إعدادات نظام البث.</p></details>
+          <details class="module-card" data-module-type="admin"><summary><span class="module-symbol">⇧</span><span><b>الشركاء والإحالات</b><small>Partners & Referrals</small></span></summary><p>مراجعة طلبات الشركاء والإحالات والعمولات واعتماد المستحقات وفق قواعد برنامج الشركاء.</p></details>
+          <details class="module-card" data-module-type="admin"><summary><span class="module-symbol">☏</span><span><b>إدارة الدعم والتذاكر</b><small>Support Operations</small></span></summary><p>استعراض تذاكر المستخدمين والرد عليها وتغيير الحالة ومتابعة وقت الحل وجودة الدعم.</p></details>
+          <details class="module-card" data-module-type="admin"><summary><span class="module-symbol">▣</span><span><b>المدفوعات والمتجر والتراخيص</b><small>Commerce Administration</small></span></summary><p>مراجعة طلبات المتجر والمدفوعات اليدوية واعتماد التراخيص وحزم القوالب بعد التحقق.</p></details>
+        </div>
+      </div>
+      <div class="catalog-footnote reveal"><b>ملاحظة حول حالة الأقسام:</b> هذا الفهرس يصف الصفحات والوظائف الواردة في وثائق نطاق MailForge التي قدمها صاحب المشروع. لا يثبت وحده أن كل مسار تم اختباره end-to-end في بيئة إنتاج؛ حالة التفعيل والاختبار يجب أن توثق لكل وظيفة على حدة.</div>
+      <div class="cross-feature-block reveal">
+        <div class="catalog-group-head"><span>04</span><div><h3>خصائص عابرة للأقسام</h3><p>قد تظهر في أكثر من صفحة ولا تتطلب مسارًا مستقلًا.</p></div></div>
+        <div class="cross-feature-grid">
+          <article><b>🔔 Notifications & Broadcast</b><p>تنبيهات داخلية وعدّاد غير المقروء وإعلانات الإدارة وفق الجمهور المستهدف.</p></article>
+          <article><b>📱 PWA & Mobile</b><p>إمكانية تثبيت تجربة الويب على الموبايل، مع شاشة بداية واختصارات حسب المتصفح.</p></article>
+          <article><b>🕘 Scheduling & Timezone</b><p>جدولة الحملات وعرض بيانات زمنية تراعي التوقيت المحلي في التحليلات.</p></article>
+          <article><b>🧪 A/B Testing</b><p>إعداد نسخ عناوين أو محتوى للمقارنة عند تفعيل الاختبار في مسار الحملة.</p></article>
+          <article><b>↩ Unsubscribe & Suppression</b><p>قائمة استبعاد مركزية والتحقق من حالة الاشتراك قبل الإرسال وفق منطق التنفيذ.</p></article>
+          <article><b>🗂 Versioning & Recovery</b><p>الاحتفاظ بالمحتوى واستعادة العناصر المحذوفة قبل الحذف النهائي وفق سياسات السجل وسلة المهملات.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section class="section ai-section" id="ai">
+      <div class="section-head reveal">
+        <div class="eyebrow">08 / MailForge Intelligence</div>
+        <h2><span data-editable="aiTitleMain" data-edit-label="عنوان الذكاء الاصطناعي">الذكاء الاصطناعي لا يعيش في نافذة منفصلة؛</span><br><span data-editable="aiTitleAccent" data-edit-label="عنوان الذكاء الاصطناعي المميز">بل داخل سير العمل.</span></h2>
+        <p>فكرة MailForge Intelligence هي نقل المساعدة الذكية إلى اللحظة التي يحتاجها المستخدم: عند التخطيط، والكتابة، والتصميم، واختيار الجمهور، وقراءة النتائج.</p>
+      </div>
+      <div class="ai-layout">
+        <div class="ai-console reveal">
+          <div class="console-top"><span class="console-light"></span><span class="console-light"></span><span class="console-light"></span><b>MailForge Intelligence</b><span class="console-badge">AI layer</span></div>
+          <div class="console-body">
+            <div class="ai-prompt-label">اكتب هدف حملتك</div>
+            <div class="ai-prompt">«أريد إطلاق حملة من 3 رسائل للتعريف بدورة التسويق الرقمي لمهتمين جدد.»</div>
+            <div class="ai-thinking"><i></i><i></i><i></i><span>تحويل الهدف إلى خطوات قابلة للتنفيذ...</span></div>
+            <div class="ai-result"><div class="result-head"><span>Campaign draft</span><span class="result-state">Draft · للمراجعة</span></div><div class="result-step"><b>01</b><span><strong>رسالة تعريفية</strong><small>تعريف بالدورة والقيمة</small></span><em>Day 0</em></div><div class="result-step"><b>02</b><span><strong>رسالة توضيحية</strong><small>المحتوى والمخرجات</small></span><em>Day 1</em></div><div class="result-step"><b>03</b><span><strong>دعوة للتسجيل</strong><small>CTA وخطوة تالية واضحة</small></span><em>Day 3</em></div></div>
+            <small class="console-note">تصوير توضيحي لفكرة سير العمل بالذكاء الاصطناعي — ليس نتيجة تشغيل حي.</small>
+          </div>
+        </div>
+        <div class="ai-tools-area reveal reveal-delay">
+          <div class="ai-filter" role="tablist" aria-label="تصنيف أدوات الذكاء الاصطناعي">
+            <button class="ai-filter-btn active" data-filter="all">الكل</button><button class="ai-filter-btn" data-filter="strategy">التخطيط</button><button class="ai-filter-btn" data-filter="content">المحتوى</button><button class="ai-filter-btn" data-filter="safety">الإرسال</button><button class="ai-filter-btn" data-filter="insight">التحليل</button>
+          </div>
+          <div class="ai-tool-grid" id="aiToolGrid">
+            <article class="ai-tool" data-category="strategy"><span>01</span><div><h3>AI Campaign Planner</h3><p>تحويل فكرة عامة إلى خطة حملة وسلسلة بريدية متعددة الخطوات.</p></div></article>
+            <article class="ai-tool" data-category="strategy"><span>02</span><div><h3>AI Audience Suggester</h3><p>اقتراح الشرائح المناسبة وفق بيانات الجمهور وسجل التفاعل المتاح.</p></div></article>
+            <article class="ai-tool" data-category="content"><span>03</span><div><h3>AI Template Designer</h3><p>إنشاء مسودة قالب متجاوب من وصف موضوع الرسالة والهدف.</p></div></article>
+            <article class="ai-tool" data-category="content"><span>04</span><div><h3>AI Content Generator</h3><p>كتابة المحتوى وتحسين الصياغة والأسلوب وتصحيح النصوص.</p></div></article>
+            <article class="ai-tool" data-category="safety"><span>05</span><div><h3>Inbox Guard / Spam Shield</h3><p>فحص إرشادي لمحتوى الرسالة واقتراح بدائل لعبارات قد تثير الانتباه.</p></div></article>
+            <article class="ai-tool" data-category="insight"><span>06</span><div><h3>AI Performance Analyst</h3><p>تلخيص مؤشرات الحملة واقتراح ما يمكن تحسينه في المرة التالية.</p></div></article>
+            <article class="ai-tool" data-category="content"><span>07</span><div><h3>Subject Line Generator</h3><p>اقتراح عناوين وPreheaders متعددة للاختبار والتحسين.</p></div></article>
+            <article class="ai-tool" data-category="content"><span>08</span><div><h3>Bilingual Translator</h3><p>المساعدة في تحويل المحتوى بين العربية والإنجليزية ومراعاة اتجاه النص.</p></div></article>
+            <article class="ai-tool" data-category="content"><span>09</span><div><h3>CTA & Hook Generator</h3><p>اقتراح عبارات افتتاحية وأزرار دعوة لاتخاذ الإجراء بحسب هدف الرسالة.</p></div></article>
+            <article class="ai-tool" data-category="insight"><span>10</span><div><h3>AI Platform Assistant</h3><p>مساعد يوجّه المستخدم داخل المنصة ويجيب عن أسئلة الاستخدام.</p></div></article>
+          </div>
+          <div class="ai-honesty">ملاحظة: هذه هي مجموعة أدوات الذكاء الاصطناعي المحددة في نطاق المنتج. يجب التحقق من جاهزية كل تدفق وجودة مخرجاته قبل تسويقه كميزة إنتاجية مكتملة.</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- AI TOOL DEEP DIVE -->
+    <section class="section deep-section ai-deep-section" id="ai-details">
+      <div class="section-head reveal">
+        <div class="eyebrow">09 / AI Toolkit Deep Dive</div>
+        <h2><span data-editable="aiDeepTitleMain" data-edit-label="عنوان أدوات AI">عشر أدوات AI،</span> <span data-editable="aiDeepTitleAccent" data-edit-label="عنوان أدوات AI المميز">كل أداة في موضع احتياجها.</span></h2>
+        <p>تغطي مجموعة MailForge Intelligence مراحل التخطيط والكتابة والتصميم والاستهداف والفحص والتحليل. الهدف هو إدخال المساعدة الذكية إلى العمل اليومي، لا إضافة محادثة منفصلة فقط.</p>
+      </div>
+      <div class="ai-detail-grid">
+        <article class="ai-detail-card reveal"><span>01 · Strategy</span><h3>AI Campaign Planner</h3><p>يأخذ هدف الحملة ويقترح هيكل سلسلة بريدية تصل في نطاق المشروع إلى ست رسائل، مع عناوين ومحتوى أولي وفواصل زمنية. ينتج مسودة متعددة الرسائل يراجعها المستخدم قبل اعتمادها.</p><div><b>المدخل:</b> هدف الحملة والجمهور ونوع النشاط.</div><div><b>المخرج:</b> تسلسل مقترح، رسائل، فواصل زمنية.</div></article>
+        <article class="ai-detail-card reveal"><span>02 · Audience</span><h3>AI Audience Suggester</h3><p>يساعد على اختيار الشريحة المحتملة من المجموعات والوسوم وبيانات التفاعل المتاحة، مع ضرورة بقاء قرار الإرسال النهائي للمستخدم.</p><div><b>المدخل:</b> هدف الحملة وحقول الجمهور وسجل التفاعل المتاح.</div><div><b>المخرج:</b> اقتراح شريحة أو فلاتر للمراجعة.</div></article>
+        <article class="ai-detail-card reveal"><span>03 · Design</span><h3>AI Template Designer</h3><p>يحوّل وصفًا نصيًا إلى مسودة قالب بريد، ويقترح هيكلًا بصريًا وألوانًا ونصوصًا يمكن تعديلها في المحرر المرئي.</p><div><b>المدخل:</b> نوع الرسالة والموضوع والهوية المطلوبة.</div><div><b>المخرج:</b> قالب أولي قابل للتحرير والمعاينة.</div></article>
+        <article class="ai-detail-card reveal"><span>04 · Content</span><h3>AI Email Content Generator & Polisher</h3><p>يكتب مسودة أو يحسّن نصًا قائمًا، ويغير النبرة بين رسمية وودية ومقنعة وحماسية، ويساعد في التصحيح وإعادة الصياغة.</p><div><b>المدخل:</b> فكرة الرسالة والجمهور والنبرة.</div><div><b>المخرج:</b> نص منظم قابل للمراجعة والتحرير.</div></article>
+        <article class="ai-detail-card reveal"><span>05 · Pre-send</span><h3>Inbox Guard / Spam Shield</h3><p>يفحص صياغة الرسالة بحثًا عن إشارات محتوى قد تستدعي الحذر ويقدم اقتراحات تحسين. هذا فحص إرشادي للمحتوى، وليس محاكاة كاملة لمزودي البريد ولا ضمانًا للوصول إلى Inbox.</p><div><b>المدخل:</b> نص الرسالة والعنوان وبعض خصائص الحملة.</div><div><b>المخرج:</b> ملاحظات واقتراحات قبل الإرسال.</div></article>
+        <article class="ai-detail-card reveal"><span>06 · Insights</span><h3>AI Performance Analyst</h3><p>يلخص بيانات الحملة المتاحة ويضعها في سياق عملي: ما المؤشر الذي يستحق الانتباه؟ ما الروابط الأكثر تفاعلًا؟ ما الذي يمكن اختباره لاحقًا؟</p><div><b>المدخل:</b> مؤشرات الحملة والأحداث المسجلة.</div><div><b>المخرج:</b> ملخص تنفيذي وأفكار تحسين.</div></article>
+        <article class="ai-detail-card reveal"><span>07 · Subject</span><h3>Subject Line & Preheader Generator</h3><p>يقترح عادةً مجموعة خيارات متعددة — من 5 إلى 10 وفق وصف الأداة في المشروع — لعنوان الرسالة ونص المعاينة، لإعداد نسخ مرشحة للاختبار بدل اختيار عنوان واحد بالتخمين.</p><div><b>المدخل:</b> موضوع الحملة والجمهور والنبرة.</div><div><b>المخرج:</b> قائمة عناوين وPreheaders مقترحة.</div></article>
+        <article class="ai-detail-card reveal"><span>08 · Language</span><h3>Bilingual Translator & Localizer</h3><p>يساعد على التحويل بين العربية والإنجليزية وتكييف اتجاه الكتابة RTL/LTR. التوطين الجيد يعني مراعاة السياق لا مجرد الترجمة الحرفية، ويجب مراجعة اللهجات والمصطلحات قبل الإرسال.</p><div><b>المدخل:</b> النص الأصلي واللغة/النبرة المطلوبة.</div><div><b>المخرج:</b> صياغة بديلة مع اتجاه مناسب.</div></article>
+        <article class="ai-detail-card reveal"><span>09 · Conversion</span><h3>CTA & Hook Generator</h3><p>يقترح افتتاحيات وأزرار دعوة لاتخاذ الإجراء متوافقة مع غرض الرسالة، مثل التسجيل أو الحجز أو قراءة التفاصيل أو طلب عرض سعر.</p><div><b>المدخل:</b> هدف الحملة والخطوة المطلوبة من المستلم.</div><div><b>المخرج:</b> Hooks وCTAs متنوعة.</div></article>
+        <article class="ai-detail-card reveal"><span>10 · Assistance</span><h3>AI Platform Assistant</h3><p>مساعد إرشادي داخل المنصة يشرح الصفحات وخطوات الاستخدام ويجيب عن أسئلة المستخدم حول الإعدادات وسير العمل.</p><div><b>المدخل:</b> سؤال المستخدم وسياق القسم الذي يعمل فيه.</div><div><b>المخرج:</b> إرشادات وخطوات تالية.</div></article>
+      </div>
+      <div class="ai-value-note reveal"><b>كيف تصبح هذه الأدوات ميزة يصعب تقليدها؟</b><p>ليس بكثرة أسماء الأدوات، بل بربط السياق: نوع النشاط، والجمهور، واللغة، والقالب، ونتائج الحملات السابقة. ومع الوقت يمكن بناء Playbooks متخصصة لمراكز التدريب والمتاجر والوكالات، بشرط استخدام البيانات المصرح بها وحمايتها وعدم مشاركة بيانات عميل مع آخر.</p></div>
+    </section>
+
+    <!-- USER JOURNEY -->
+    <section class="section journey-section" id="journey">
+      <div class="section-head center reveal">
+        <div class="eyebrow">10 / End-to-End Journey</div>
+        <h2>رحلة المستخدم من البداية <span>حتى التحسين.</span></h2>
+        <p>اختر أي مرحلة لتشاهد ماذا يفعل المستخدم، وما الذي تقدمه MailForge في تلك اللحظة.</p>
+      </div>
+      <div class="journey-shell reveal">
+        <div class="journey-progress"><div class="journey-track"><div class="journey-track-fill" id="journeyFill"></div></div><div class="journey-steps" id="journeySteps">
+          <button class="journey-step active" data-step="0"><span>01</span><b>اكتشف</b></button>
+          <button class="journey-step" data-step="1"><span>02</span><b>اربط</b></button>
+          <button class="journey-step" data-step="2"><span>03</span><b>نظّم</b></button>
+          <button class="journey-step" data-step="3"><span>04</span><b>صمّم</b></button>
+          <button class="journey-step" data-step="4"><span>05</span><b>أرسل</b></button>
+          <button class="journey-step" data-step="5"><span>06</span><b>حلّل</b></button>
+          <button class="journey-step" data-step="6"><span>07</span><b>توسّع</b></button>
+        </div></div>
+        <div class="journey-content" aria-live="polite">
+          <div class="journey-copy"><div class="journey-counter" id="journeyCounter">STEP 01 / 07</div><h3 id="journeyTitle">من زيارة المنصة إلى أول مساحة عمل.</h3><p id="journeyDesc">يكتشف المستخدم القيمة، ينشئ حسابه، ويتعرف على لوحة التحكم والإرشادات الأولى.</p><div class="journey-features" id="journeyFeatures"><span>Public website</span><span>Authentication</span><span>Onboarding</span></div><div class="journey-controls"><button class="btn btn-ghost" id="journeyPrev" disabled>السابق</button><button class="btn btn-primary" id="journeyNext">الخطوة التالية <span>←</span></button></div></div>
+          <div class="journey-visual" id="journeyVisual"><div class="journey-visual-ring"></div><div class="journey-main-icon" id="journeyIcon">✦</div><div class="journey-float f1">MailForge</div><div class="journey-float f2">Workspace</div><div class="journey-float f3">Ready</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT TOUR / GALLERY -->
+    <section class="section gallery-section" id="product-tour">
+      <div class="section-head reveal">
+        <div class="eyebrow">11 / Inside the Product</div>
+        <h2><span data-editable="galleryTitleMain" data-edit-label="عنوان معرض المنتج">من واجهة المنتج،</span> <span data-editable="galleryTitleAccent" data-edit-label="عنوان المعرض المميز">تظهر الفكرة بوضوح.</span></h2>
+        <p>هذه لقطات شاشة من واجهة MailForge التي شاركتها، وليست صورًا تخيلية لمنتج مختلف.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <button class="gallery-item gallery-main reveal" data-gallery-slot="dashboardOverview" data-image="assets/dashboard-overview.png" data-caption="لوحة التحكم الرئيسية — مؤشرات الرسائل ومسار التفاعل" aria-label="تكبير لقطة لوحة التحكم">
+          <span class="gallery-label">01 / Dashboard</span><img src="assets/dashboard-overview.png" data-media-slot="dashboardOverview" alt="لوحة التحكم الرئيسية في MailForge"><span class="gallery-caption"><span data-editable="captionDashboard" data-edit-label="عنوان لقطة لوحة التحكم">لوحة التحكم الرئيسية</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="dashboardOnboarding" data-image="assets/dashboard-onboarding.png" data-caption="لوحة التحكم مع خطوات تفعيل أول حملة" aria-label="تكبير لقطة تهيئة أول حملة">
+          <span class="gallery-label">02 / Onboarding</span><img src="assets/dashboard-onboarding.png" data-media-slot="dashboardOnboarding" alt="لوحة التحكم وخطوات بدء أول حملة"><span class="gallery-caption"><span data-editable="captionOnboarding" data-edit-label="عنوان لقطة التهيئة">البدء وأول حملة</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="dashboardActivity" data-image="assets/dashboard-activity.png" data-caption="لوحة التحكم — الأنشطة السريعة ونشاط التفاعل" aria-label="تكبير لقطة النشاط السريع">
+          <span class="gallery-label">03 / Dashboard Activity</span><img src="assets/dashboard-activity.png" data-media-slot="dashboardActivity" alt="لوحة التحكم مع النشاط السريع والرسوم البيانية"><span class="gallery-caption"><span data-editable="captionActivity" data-edit-label="عنوان لقطة النشاط">النشاط السريع والتفاعل</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="templatesGallery" data-image="assets/templates-gallery.png" data-caption="مكتبة القوالب — نماذج البريد الجاهزة" aria-label="تكبير لقطة مكتبة القوالب">
+          <span class="gallery-label">04 / Template Gallery</span><img src="assets/templates-gallery.png" data-media-slot="templatesGallery" alt="مكتبة قوالب البريد في MailForge"><span class="gallery-caption"><span data-editable="captionTemplates" data-edit-label="عنوان لقطة القوالب">مكتبة القوالب</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="templatesWorkspace" data-image="assets/templates-library.png" data-caption="مساحة القوالب — البحث والتصفية واستيراد القوالب ومصمم الذكاء" aria-label="تكبير لقطة مساحة القوالب">
+          <span class="gallery-label">05 / Templates Workspace</span><img src="assets/templates-library.png" data-media-slot="templatesWorkspace" alt="مساحة إدارة القوالب ومصمم الذكاء"><span class="gallery-caption"><span data-editable="captionTemplateWorkspace" data-edit-label="عنوان لقطة مساحة القوالب">إدارة القوالب ومصمم الذكاء</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="analyticsOverview" data-image="assets/analytics-overview.png" data-caption="التحليلات العامة — مؤشرات الإرسال والفتح والنقر" aria-label="تكبير لقطة التحليلات">
+          <span class="gallery-label">06 / Analytics</span><img src="assets/analytics-overview.png" data-media-slot="analyticsOverview" alt="لوحة التحليلات العامة"><span class="gallery-caption"><span data-editable="captionAnalytics" data-edit-label="عنوان لقطة التحليلات">التحليلات العامة</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="analyticsDetailed" data-image="assets/analytics-detailed.png" data-caption="تحليل الأداء — الاتجاهات وتوزيع حالات التسليم" aria-label="تكبير لقطة تفاصيل التحليلات">
+          <span class="gallery-label">07 / Analytics Detail</span><img src="assets/analytics-detailed.png" data-media-slot="analyticsDetailed" alt="تفاصيل تحليلات الأداء والرسوم البيانية"><span class="gallery-caption"><span data-editable="captionAnalyticsDetail" data-edit-label="عنوان لقطة تفاصيل التحليلات">تفاصيل الأداء والتسليم</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="campaignResults" data-image="assets/campaign-results.png" data-caption="نتائج الحملة — ملخص الرسائل والتفاعل وإعادة الإرسال" aria-label="تكبير لقطة نتائج الحملة">
+          <span class="gallery-label">08 / Campaign Results</span><img src="assets/campaign-results.png" data-media-slot="campaignResults" alt="صفحة نتائج الحملة في MailForge"><span class="gallery-caption"><span data-editable="captionCampaignResults" data-edit-label="عنوان لقطة نتائج الحملة">نتائج الحملة</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="campaignCreation" data-image="assets/campaign-creation.png" data-caption="إنشاء حملة جديدة — اختيار اسم الحملة والجمهور والقالب" aria-label="تكبير لقطة إنشاء حملة">
+          <span class="gallery-label">09 / Campaign Setup</span><img src="assets/campaign-creation.png" data-media-slot="campaignCreation" alt="نافذة إنشاء حملة جديدة"><span class="gallery-caption"><span data-editable="captionCampaignCreation" data-edit-label="عنوان لقطة إنشاء الحملة">إنشاء حملة جديدة</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="automationWorkflow" data-image="assets/automation-workflow.png" data-caption="الأتمتة — نماذج العمل والسلاسل الترحيبية واختبارات A/B" aria-label="تكبير لقطة الأتمتة">
+          <span class="gallery-label">10 / Automation</span><img src="assets/automation-workflow.png" data-media-slot="automationWorkflow" alt="صفحة الأتمتة في MailForge"><span class="gallery-caption"><span data-editable="captionAutomation" data-edit-label="عنوان لقطة الأتمتة">الأتمتة والسلاسل البريدية</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="contactsManagement" data-image="assets/contacts-management.png" data-caption="جهات الاتصال — المجموعات والاستيراد والتصدير واقتراح الجمهور" aria-label="تكبير لقطة جهات الاتصال">
+          <span class="gallery-label">11 / Audience</span><img src="assets/contacts-management.png" data-media-slot="contactsManagement" alt="صفحة جهات الاتصال وإدارة الجمهور"><span class="gallery-caption"><span data-editable="captionContacts" data-edit-label="عنوان لقطة جهات الاتصال">إدارة جهات الاتصال والجمهور</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="analyticsSummary" data-image="assets/analytics-summary.png" data-caption="التحليلات — ملخص الأداء ومؤشرات الفتح والنقر والارتداد" aria-label="تكبير ملخص التحليلات">
+          <span class="gallery-label">12 / Analytics Summary</span><img src="assets/analytics-summary.png" data-media-slot="analyticsSummary" alt="ملخص التحليلات ومؤشرات الحملة"><span class="gallery-caption"><span data-editable="captionAnalyticsSummary" data-edit-label="عنوان ملخص التحليلات">ملخص الأداء</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="analyticsDelivery" data-image="assets/analytics-delivery.png" data-caption="تفاصيل التحليلات — نشاط الإرسال وتوزيع نطاقات المستلمين وحالات التسليم" aria-label="تكبير تفاصيل التسليم">
+          <span class="gallery-label">13 / Delivery Insights</span><img src="assets/analytics-delivery.png" data-media-slot="analyticsDelivery" alt="تحليل نشاط الإرسال وتوزيع نطاقات المستلمين"><span class="gallery-caption"><span data-editable="captionAnalyticsDelivery" data-edit-label="عنوان تفاصيل التسليم">نشاط الإرسال وحالات التسليم</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="analyticsBestTime" data-image="assets/analytics-best-time.png" data-caption="التحليلات — أفضل وقت للإرسال وخريطة كثافة النقرات والروابط" aria-label="تكبير تحليل أفضل وقت للإرسال">
+          <span class="gallery-label">14 / Timing Insights</span><img src="assets/analytics-best-time.png" data-media-slot="analyticsBestTime" alt="أفضل وقت للإرسال وتحليل الروابط"><span class="gallery-caption"><span data-editable="captionAnalyticsTiming" data-edit-label="عنوان أفضل وقت للإرسال">أفضل وقت للإرسال والروابط</span><b>↗</b></span>
+        </button>
+        <button class="gallery-item reveal" data-gallery-slot="mediaLibrary" data-image="assets/media-library.png" data-caption="مكتبة الوسائط — إدارة الصور والملفات وروابط الاستخدام" aria-label="تكبير مكتبة الوسائط">
+          <span class="gallery-label">15 / Media Library</span><img src="assets/media-library.png" data-media-slot="mediaLibrary" alt="مكتبة الوسائط في MailForge"><span class="gallery-caption"><span data-editable="captionMediaLibrary" data-edit-label="عنوان مكتبة الوسائط">مكتبة الوسائط والملفات</span><b>↗</b></span>
+        </button>
+      </div>
+      <div class="gallery-extra-wrap" id="customGalleryWrap" hidden>
+        <div class="gallery-extra-head"><span class="eyebrow">MORE PRODUCT SCREENS</span><b>لقطات إضافية من مساحة العمل</b></div>
+        <div class="custom-gallery-grid" id="customGalleryItems" aria-live="polite"></div>
+      </div>
+      <p class="gallery-disclaimer">البيانات الظاهرة داخل لقطات الشاشة هي بيانات واجهة/اختبار كما وردت في الصور المرسلة، ولا تُعرض هنا باعتبارها نتائج تجارية لعملاء أو إثباتًا للـTraction.</p>
+    </section>
+
+    <!-- ARCHITECTURE / TRUST -->
+    <section class="section architecture-section" id="technology">
+      <div class="section-head center reveal">
+        <div class="eyebrow">12 / Technology & Trust</div>
+        <h2><span data-editable="technologyTitleMain" data-edit-label="عنوان التقنية والثقة">التجربة الجيدة تبدأ من</span> <span data-editable="technologyTitleAccent" data-edit-label="عنوان الثقة المميز">تشغيل مسؤول.</span></h2>
+        <p>MailForge تبني تجربة الإرسال حول حساب المستخدم، مع طبقات لإدارة الصلاحيات، سلامة الحملة، وحالة المستلمين.</p>
+      </div>
+      <div class="architecture-grid">
+        <article class="architecture-card reveal"><div class="architecture-icon">🔐</div><h3>OAuth Connections</h3><p>ربط Gmail وOutlook من خلال آليات المصادقة الخاصة بالمزود، بدل طلب كلمة مرور البريد من المستخدم.</p><span class="arch-status tested">اختبار داخلي عبر المزودين</span></article>
+        <article class="architecture-card reveal"><div class="architecture-icon">🛡️</div><h3>Sending Controls</h3><p>ضوابط داخلية لتنظيم الإرسال، وحجز الرسائل المجدولة، والتعامل مع الحالات غير المؤكدة لتقليل احتمال التكرار.</p><span class="arch-status">بحاجة إلى اختبار إنتاجي موسع</span></article>
+        <article class="architecture-card reveal"><div class="architecture-icon">↩</div><h3>Unsubscribe Handling</h3><p>إدارة قائمة الاستبعاد والتحقق من حالة الاشتراك قبل الإرسال، مع تصميم لدعم آليات إلغاء الاشتراك بنقرة واحدة.</p><span class="arch-status">يتطلب تحققًا نهائيًا من المزود</span></article>
+        <article class="architecture-card reveal"><div class="architecture-icon">👥</div><h3>Workspace Isolation</h3><p>أدوار للمستخدمين ومساحات عمل للوكالات، بهدف فصل بيانات العملاء وتوزيع المسؤوليات.</p><span class="arch-status">اختبار عزل وأمان مطلوب</span></article>
+      </div>
+      <div class="sending-note reveal"><div class="note-mark">!</div><div><b>توضيح مهم حول الإرسال:</b><p>الإرسال من Gmail أو Outlook لا يضمن وصول الرسائل إلى Primary Inbox. تظل سياسات المزود، وحصصه، وجودة القائمة، والمصادقة، والمحتوى عوامل مؤثرة. السقف الداخلي الموصوف في نطاق MailForge هو 400 رسالة لكل صندوق خلال 24 ساعة متحركة، ويجب دائمًا احترام الحد الأقل الذي يفرضه مزود البريد.</p></div></div>
+    </section>
+
+
+    <!-- SENDING LIFECYCLE -->
+    <section class="section deep-section sending-deep-section" id="sending-lifecycle">
+      <div class="section-head reveal">
+        <div class="eyebrow">13 / Sending Lifecycle</div>
+        <h2>من ربط الحساب إلى متابعة النتيجة: <span>كيف تمر الرسالة داخل النظام؟</span></h2>
+        <p>هذه خريطة تشغيل مبسطة لمسار الحملة كما تصفه مواصفات MailForge. القواعد الداخلية تساعد على التنظيم، لكنها لا تلغي حدود مزود البريد أو شروطه.</p>
+      </div>
+      <div class="send-pipeline reveal">
+        <article><span>01</span><b>OAuth Connection</b><p>ربط Gmail أو Outlook بصلاحيات مصرح بها، دون طلب كلمة مرور البريد داخل MailForge.</p></article>
+        <i>↓</i>
+        <article><span>02</span><b>Audience & Consent</b><p>اختيار الجمهور، التحقق من حالات الاستبعاد وإلغاء الاشتراك، ومراجعة البيانات المطلوبة.</p></article>
+        <i>↓</i>
+        <article><span>03</span><b>Campaign Review</b><p>القالب، العنوان، المتغيرات، الروابط، المرفقات، المرسل، والجدولة.</p></article>
+        <i>↓</i>
+        <article><span>04</span><b>Safety Reservation</b><p>حجز الرسائل المجدولة وتطبيق الضوابط الداخلية لتقليل التكرار وتضارب عمليات الإرسال.</p></article>
+        <i>↓</i>
+        <article><span>05</span><b>Provider Send</b><p>إرسال عبر API مزود البريد المرتبط، مع التعامل مع الحصص والرفض المؤقت والأخطاء.</p></article>
+        <i>↓</i>
+        <article><span>06</span><b>Events & Analytics</b><p>تسجيل الأحداث المتاحة مثل الإرسال والفتح والنقر والارتداد، ثم عرض النتائج بحسب دقة ما يقدمه المزود والتتبع.</p></article>
+      </div>
+      <div class="sending-guard-grid">
+        <article><h3>ضوابط الإرسال</h3><ul><li>سقف داخلي موصوف: 400 رسالة لكل صندوق خلال نافذة 24 ساعة متحركة.</li><li>يجب تطبيق الحد الأقل بين سقف MailForge وحصص مزود البريد الفعلية.</li><li>الإيقاف عند تعذر التحقق من حالة Unsubscribe أو عند فشل فحوصات إلزامية، وفق إعداد التنفيذ.</li><li>حالات الإرسال غير المؤكدة تحتاج مراجعة/تسوية قبل أي إعادة محاولة حتى لا تتكرر الرسالة.</li></ul></article>
+        <article><h3>الخصوصية وجودة التتبع</h3><ul><li>نسخ CC/BCC يجب التعامل معها وفق طبيعة الرسالة وخصوصية المستلمين.</li><li>لا تستخدم قوائم بلا أساس مناسب للتواصل التسويقي.</li><li>Open Tracking قد يتأثر بتحميل الصور الآلي وتقنيات الخصوصية؛ لا يثبت أن المستلم قرأ الرسالة.</li><li>Click Tracking يقيس النقرات المسجلة، وقد تتدخل فلاتر وروبوتات الأمان.</li></ul></article>
+      </div>
+      <div class="sending-caveat"><b>ما الذي لا تعد به MailForge؟</b><span>لا يوجد ضمان بأن كل رسالة ستصل إلى Primary Inbox أو ستتجنب Spam. النتيجة تعتمد على سمعة المرسل والنطاق، والمصادقة، والمحتوى، وجودة القائمة، وتفاعل المستلمين، وسياسات Google وMicrosoft.</span></div>
+    </section>
+
+    <!-- DIFFERENTIATION -->
+    <section class="section differentiation-section" id="positioning">
+      <div class="section-head reveal">
+        <div class="eyebrow">14 / Positioning</div>
+        <h2><span data-editable="positionTitleMain" data-edit-label="عنوان التمركز">لسنا بحاجة إلى تقليد كل منصة؛</span><br><span data-editable="positionTitleAccent" data-edit-label="عنوان التمركز المميز">بل لخدمة سياق مختلف.</span></h2>
+        <p>السوق يضم حلولًا ناضجة للتسويق والأتمتة وأدوات إرسال عبر Gmail. فرصة MailForge هي بناء تجربة عربية متخصصة تربط أدوات العمل في سياق واحد.</p>
+      </div>
+      <div class="position-table reveal">
+        <div class="position-row position-header"><span>محور المقارنة</span><span>ما الذي تقدمه الفئة الحالية من الأدوات؟</span><span>اتجاه تميّز MailForge</span></div>
+        <div class="position-row"><b>تجربة الاستخدام</b><span>تختلف حسب المنصة والسوق</span><strong>Arabic-first وRTL في سير العمل</strong></div>
+        <div class="position-row"><b>إنشاء المحتوى</b><span>محررات وقوالب وأدوات AI متنوعة</span><strong>مساعدة لغوية عربية داخل المحرر</strong></div>
+        <div class="position-row"><b>إدارة الحملة</b><span>حملات وتقسيم وأتمتة بدرجات مختلفة</span><strong>رحلة مترابطة من الجمهور إلى التحليل</strong></div>
+        <div class="position-row"><b>مزود الإرسال</b><span>خوادم أو تكاملات حسب المنتج</span><strong>ربط صندوق البريد للمستخدم المناسب</strong></div>
+        <div class="position-row"><b>الوكالات</b><span>ميزات فرق وإدارة عملاء لدى بعض الأدوات</span><strong>مساحات عمل منفصلة ضمن تجربة واحدة</strong></div>
+      </div>
+      <p class="position-footnote">هذه مقارنة لاتجاهات التمركز وليست تدقيقًا كاملًا لميزات أو أسعار كل منافس. يجب التحقق من أي مقارنة مباشرة قبل استخدامها في عرض استثماري.</p>
+    </section>
+
+
+    <!-- COMPETITIVE LANDSCAPE -->
+    <section class="section deep-section competition-section" id="competition">
+      <div class="section-head reveal">
+        <div class="eyebrow">15 / Competitive Landscape</div>
+        <h2><span data-editable="competitionTitleMain" data-edit-label="عنوان المنافسة">من ينافس MailForge؟</span> <span data-editable="competitionTitleAccent" data-edit-label="عنوان المنافسة المميز">وما المساحة التي يمكن أن تحتلها؟</span></h2>
+        <p>MailForge تدخل سوقًا فيه منصات ناضجة وأدوات متخصصة. المقارنة الصحيحة لا تقول إن المنافسين لا يملكون AI أو Automation؛ بل تشرح فئات المنافسة ونقاط قوة كل بديل والتمركز الذي تسعى MailForge إلى إثباته.</p>
+      </div>
+      <div class="competitor-grid">
+        <article class="competitor-card reveal"><div class="competitor-brand"><span class="competitor-mark mailchimp-mark">M</span><div><h3>Mailchimp</h3><small>All-in-one Email Marketing</small></div></div><p>منصة واسعة للحملات والقوالب وإدارة الجمهور والأتمتة، وتضم أدوات AI لكتابة المحتوى والعناوين وتوصيات الحملات وتحسين توقيت الإرسال.</p><div class="competitor-strength"><b>نقطة القوة:</b> منظومة واسعة ونضج في أدوات التسويق والتكاملات.</div><div class="competitor-position"><b>مساحة MailForge المقترحة:</b> تجربة عربية محلية أولًا، ومسار متصل يركز على ربط البريد وصناعة المحتوى العربي وسير عمل القطاعات.</div><a href="https://mailchimp.com/features/" target="_blank" rel="noopener">الموقع والميزات الرسمية ↗</a></article>
+        <article class="competitor-card reveal"><div class="competitor-brand"><span class="competitor-mark brevo-mark">B</span><div><h3>Brevo</h3><small>Multichannel Customer Platform</small></div></div><p>تقدم حملات البريد، تقسيم الجمهور والقوائم الديناميكية، وأتمتة مثل الترحيب وتذكير المناسبات، مع قنوات متعددة ومساعد AI.</p><div class="competitor-strength"><b>نقطة القوة:</b> الجمع بين البريد والقنوات الأخرى وإدارة بيانات التواصل.</div><div class="competitor-position"><b>مساحة MailForge المقترحة:</b> تبسيط تجربة العمل بالعربية وبناء Playbooks متخصصة بدل منافسة الاتساع متعدد القنوات في البداية.</div><a href="https://www.brevo.com/features/email-marketing/" target="_blank" rel="noopener">الميزات الرسمية ↗</a></article>
+        <article class="competitor-card reveal"><div class="competitor-brand"><span class="competitor-mark active-mark">A</span><div><h3>ActiveCampaign</h3><small>Marketing Automation & CRM</small></div></div><p>تجمع Email Designer وSegmentation وReporting مع AI Campaign Builder وAI Content وأتمتة متقدمة، كما تشمل CRM وقنوات متعددة.</p><div class="competitor-strength"><b>نقطة القوة:</b> عمق الأتمتة والتخصيص والذكاء الاصطناعي في سير العمل.</div><div class="competitor-position"><b>مساحة MailForge المقترحة:</b> سهولة البدء، تجربة عربية متخصصة، وإعدادات ملائمة للفرق الصغيرة والوكالات المحلية.</div><a href="https://www.activecampaign.com/platform/email-marketing" target="_blank" rel="noopener">الميزات الرسمية ↗</a></article>
+        <article class="competitor-card reveal"><div class="competitor-brand"><span class="competitor-mark gmass-mark">G</span><div><h3>GMass</h3><small>Gmail-native Outreach</small></div></div><p>أداة تعمل بالقرب من Gmail وتوفر Mail Merge وتخصيص الرسائل والمتابعة الآلية وتتبع الفتح والنقر والردود، مع خيارات إرسال مختلفة.</p><div class="competitor-strength"><b>نقطة القوة:</b> تجربة قريبة من Gmail وسرعة إرسال رسائل شخصية ومتابعات.</div><div class="competitor-position"><b>مساحة MailForge المقترحة:</b> مساحة عمل ويب أشمل تجمع القوالب والمكونات والجمهور والأتمتة والتحليلات وإدارة الوكالات.</div><a href="https://www.gmass.co/features" target="_blank" rel="noopener">الميزات الرسمية ↗</a></article>
+        <article class="competitor-card reveal"><div class="competitor-brand"><span class="competitor-mark meteor-mark">✦</span><div><h3>Mailmeteor</h3><small>Gmail / Workspace Mail Merge</small></div></div><p>توفر Mail Merge والتخصيص والقوالب والمتابعة والجدولة وتتبع التفاعل، عبر Gmail وGoogle Sheets وOutlook ومنتجات أخرى.</p><div class="competitor-strength"><b>نقطة القوة:</b> سهولة الاستخدام وتكامل قوي مع أدوات Google وسير عمل البريد الشخصي.</div><div class="competitor-position"><b>مساحة MailForge المقترحة:</b> محرر وقوالب عربية، ووحدات تشغيل متعددة داخل لوحة واحدة، مع دعم مساحات عمل للوكالات.</div><a href="https://mailmeteor.com/products/gmail" target="_blank" rel="noopener">المنتج الرسمي ↗</a></article>
+      </div>
+      <div class="comparison-table-wrap reveal">
+        <h3>مصفوفة مقارنة في مستوى التمركز</h3>
+        <div class="comparison-table" role="table" aria-label="مقارنة فئات المنافسين">
+          <div class="comparison-row comparison-head" role="row"><span>محور القيمة</span><span>منصات التسويق الشاملة</span><span>أدوات Gmail المتخصصة</span><span>MailForge — التمركز المقترح</span></div>
+          <div class="comparison-row" role="row"><b>المنتج الأساسي</b><span>Campaigns + CRM/Automation حسب الخطة</span><span>Mail merge + follow-up + tracking</span><strong>إدارة رحلة البريد عبر لوحة عمل موحدة</strong></div>
+          <div class="comparison-row" role="row"><b>التجربة العربية</b><span>تختلف حسب المحرر والقالب</span><span>تختلف حسب المنتج</span><strong>Arabic-first وRTL كأولوية تصميم</strong></div>
+          <div class="comparison-row" role="row"><b>الذكاء الاصطناعي</b><span>أدوات AI متاحة لدى عدة منافسين</span><span>مساعدات AI وكتابة لدى بعض الأدوات</span><strong>10 وظائف AI مدمجة في مراحل العمل حسب نطاق MailForge</strong></div>
+          <div class="comparison-row" role="row"><b>التصميم والقوالب</b><span>محررات وقوالب متقدمة</span><span>قوالب شخصية وMail Merge في المقام الأول</span><strong>Studio + Components + HTML/JSON + مكتبة قوالب</strong></div>
+          <div class="comparison-row" role="row"><b>الوكالات</b><span>إدارة فرق/عملاء في بعض المنتجات</span><span>تختلف وغالبًا ترتبط بسير عمل Gmail</span><strong>Agency Workspaces كجزء من هيكل المنتج</strong></div>
+          <div class="comparison-row" role="row"><b>الإرسال</b><span>بنية مزود/منصة، بحسب المنتج</span><span>غالبًا من صندوق المستخدم أو عبر تكاملات</span><strong>ربط Gmail وOutlook عبر OAuth وفق قيود المزود</strong></div>
+        </div>
+      </div>
+      <div class="competition-truth reveal"><b>الاستنتاج التنافسي:</b><p>لا تستطيع MailForge الفوز بمجرد القول إنها أرخص أو عربية أو تحتوي على AI. عليها إثبات أن شريحة معينة — مثل مراكز التدريب — تنجز رحلة تواصل أكثر سهولة وملاءمة معها، وتستمر في الدفع. والخصائص المذكورة لدى المنافسين مستندة إلى صفحاتهم الرسمية وقت إعداد هذا العرض؛ الخطط والأسعار والقدرات قد تختلف وتتغير.</p><small>روابط مراجعة رسمية: Mailchimp · Brevo · ActiveCampaign · GMass · Mailmeteor.</small></div>
+    </section>
+
+
+    <!-- MARKET & GO-TO-MARKET -->
+    <section class="section deep-section market-section" id="market">
+      <div class="section-head reveal">
+        <div class="eyebrow">16 / Market & Go-to-Market</div>
+        <h2><span data-editable="marketTitleMain" data-edit-label="عنوان السوق">سوق واسع، لكن البداية</span> <span data-editable="marketTitleAccent" data-edit-label="عنوان السوق المميز">يجب أن تكون محددة.</span></h2>
+        <p>MailForge تستطيع خدمة أكثر من قطاع، لكن دخول السوق يحتاج إلى اختيار شريحة تستطيع الوصول إليها وفهم عملياتها وقياس القيمة التي تحصل عليها.</p>
+      </div>
+      <div class="market-layout">
+        <div class="market-map-card reveal">
+          <span class="market-kicker">Initial geographic focus · proposed</span>
+          <h3>ابدأ من سوق تستطيع خدمته مباشرة.</h3>
+          <div class="geo-list">
+            <div><b>مصر</b><span>مقابلات واختبارات أولية وشركاء تجريبيون قريبون من فريق التأسيس.</span><i>01</i></div>
+            <div><b>السعودية</b><span>فرصة توسع للشركات ومراكز التدريب والوكالات بعد إثبات ملاءمة المنتج.</span><i>02</i></div>
+            <div><b>الإمارات</b><span>سوق إضافي للشركات الرقمية والوكالات عند جاهزية المبيعات والدعم.</span><i>03</i></div>
+          </div>
+          <small>هذه خريطة دخول سوق مقترحة وليست وصفًا لوجود عملاء أو تشغيل تجاري في هذه الدول.</small>
+        </div>
+        <div class="market-logic reveal">
+          <span class="market-kicker">Bottom-up market sizing</span>
+          <h3>كيف نحسب الفرصة بدل اختراع أرقام؟</h3>
+          <div class="market-step"><b>TAM</b><div><strong>كل السوق الممكن</strong><p>المنشآت عالميًا التي تحتاج إلى إدارة البريد والتسويق والأتمتة.</p></div></div>
+          <div class="market-step"><b>SAM</b><div><strong>السوق الذي نستطيع خدمته</strong><p>القطاعات والبلدان واللغات ومزودات البريد التي يدعمها المنتج فعليًا.</p></div></div>
+          <div class="market-step"><b>SOM</b><div><strong>الجزء القابل للاكتساب</strong><p>عدد العملاء الممكن الوصول إليهم عبر قنوات المبيعات خلال فترة محددة.</p></div></div>
+          <div class="market-formula">عدد العملاء الممكن الوصول إليهم × نسبة التحويل الواقعية × متوسط الإيراد الشهري = تقدير MRR قابل للاختبار.</div>
+        </div>
+      </div>
+      <div class="gtm-grid reveal">
+        <article><span>01 / Buyer</span><h3>من يقرر الشراء؟</h3><p>مالك المركز أو الأكاديمية، مدير التسويق، مدير العمليات، أو صاحب الوكالة.</p></article>
+        <article><span>02 / Daily User</span><h3>من يستخدمها يوميًا؟</h3><p>منسق التدريب، مسؤول التسويق، كاتب المحتوى، أو عضو فريق الحملات.</p></article>
+        <article><span>03 / Acquisition</span><h3>كيف نصل إليه؟</h3><p>مبيعات يقودها المؤسس، عروض مباشرة، شراكات مع مراكز التدريب، محتوى تعليمي، وندوات تجريبية.</p></article>
+        <article><span>04 / Activation</span><h3>كيف نثبت القيمة؟</h3><p>مساعدة العميل على ربط بريده واستيراد قائمة مناسبة وإرسال أول حملة ثم العودة لإرسال حملة ثانية.</p></article>
+      </div>
+    </section>
+
+    <!-- DEFENSIBILITY THESIS -->
+    <section class="section deep-section moat-section" id="moat">
+      <div class="section-head center reveal">
+        <div class="eyebrow">17 / Strategic Advantage</div>
+        <h2><span data-editable="moatTitleMain" data-edit-label="عنوان الميزة التنافسية">الميزة التي يصعب تقليدها</span> <span data-editable="moatTitleAccent" data-edit-label="عنوان الميزة المميز">تُبنى مع الاستخدام.</span></h2>
+        <p>لا توجد ميزة واحدة تجعل المنتج محصنًا من المنافسة. الرهان هو جمع عدة طبقات تخدم احتياجًا عربيًا محددًا وتتحسن مع الاستخدام الحقيقي.</p>
+      </div>
+      <div class="moat-grid">
+        <article class="moat-card reveal"><span>01</span><h3>Arabic-native Workflow</h3><p>اللغة واتجاه RTL ليسا ترجمة للواجهة فقط؛ بل جزء من القوالب والمحرر والمحتوى والإرشاد.</p></article>
+        <article class="moat-card reveal"><span>02</span><h3>Vertical Playbooks</h3><p>رحلات جاهزة لمراكز التدريب والأكاديميات والوكالات، مبنية على مراحل العمل الحقيقية للقطاع.</p></article>
+        <article class="moat-card reveal"><span>03</span><h3>AI in Context</h3><p>مساعدة الذكاء الاصطناعي مرتبطة بهدف الحملة والجمهور والقالب والنتائج، لا بمجرد توليد نص عام.</p></article>
+        <article class="moat-card reveal"><span>04</span><h3>Agency Operations</h3><p>مساحات العمل والصلاحيات تساعد الوكالة على تحويل MailForge إلى جزء من عملياتها اليومية.</p></article>
+        <article class="moat-card reveal"><span>05</span><h3>Learning Loop</h3><p>بيانات الأداء المصرح بها يمكن أن تغذي توصيات أكثر ملاءمة، مع عزل بيانات كل عميل وحمايتها.</p></article>
+      </div>
+      <div class="moat-truth"><b>ما ليس ميزة دفاعية بمفرده:</b><span>وجود AI عام، أو ربط Gmail، أو سقف إرسال داخلي. يمكن للمنافسين تنفيذ أجزاء من ذلك؛ الدفاع الحقيقي يتكون من تجربة أفضل واحتفاظ بالعميل وسير عمل متخصص وبيانات استخدام مشروعة.</span></div>
+    </section>
+
+    <!-- BUSINESS MODEL -->
+    <section class="section business-section" id="business">
+      <div class="section-head center reveal">
+        <div class="eyebrow">18 / Business Model</div>
+        <h2><span data-editable="businessTitleMain" data-edit-label="عنوان نموذج العمل">قيمة مستمرة، يقابلها</span> <span data-editable="businessTitleAccent" data-edit-label="عنوان نموذج العمل المميز">اشتراك مستمر.</span></h2>
+        <p>النموذج المقترح هو SaaS باشتراكات متدرجة حسب حجم الاستخدام واحتياجات الفريق والوكالة. التسعير النهائي يحتاج إلى اختبار مع العملاء.</p>
+      </div>
+      <div class="business-cards reveal">
+        <article class="business-card"><div class="plan-label">01 / Entry</div><h3>Starter</h3><p>للفرد أو النشاط الصغير الذي يبدأ بتنظيم حملاته.</p><ul><li>إدارة حملات أساسية</li><li>قوالب وأدوات تصميم أساسية</li><li>جهات اتصال وتنظيم جمهور</li></ul><span class="plan-tag">اكتساب المستخدمين</span></article>
+        <article class="business-card featured"><div class="plan-label">02 / Growth</div><div class="featured-flag">Core Plan</div><h3>Growth</h3><p>للشركات والأكاديميات التي تحتاج إلى متابعة وأتمتة وتحليل.</p><ul><li>Automation وSegmentation</li><li>AI Credits وأدوات التحليل</li><li>فريق وصلاحيات أساسية</li></ul><span class="plan-tag">الإيراد المتكرر الأساسي</span></article>
+        <article class="business-card"><div class="plan-label">03 / Scale</div><h3>Agency</h3><p>للوكالات والمستقلين الذين يديرون عدة عملاء.</p><ul><li>Client Workspaces</li><li>Team & Permissions</li><li>إدارة مركزية للعملاء</li></ul><span class="plan-tag">توسع الإيراد لكل حساب</span></article>
+      </div>
+      <div class="revenue-streams reveal"><div><b>اشتراكات SaaS</b><span>الدخل الأساسي والمتكرر</span></div><div><b>AI Credits</b><span>استخدامات الذكاء الاصطناعي</span></div><div><b>Template Marketplace</b><span>حزم قوالب متخصصة</span></div><div><b>Enterprise & API</b><span>تكاملات وخدمات مؤسسية</span></div></div>
+      <p class="business-caveat">هذا نموذج إيرادات مقترح، وليس دليلًا على وجود اشتراكات أو مبيعات محققة حاليًا. يجب تسعير الخطط بعد قياس تكلفة الإرسال، والذكاء الاصطناعي، والتخزين، والتتبع، والدعم.</p>
+    </section>
+
+    <!-- CURRENT STAGE & ROADMAP -->
+    <section class="section roadmap-section" id="roadmap">
+      <div class="section-head reveal">
+        <div class="eyebrow">19 / Current Stage & Roadmap</div>
+        <h2><span data-editable="roadmapTitleMain" data-edit-label="عنوان المرحلة الحالية">أين نقف اليوم؟</span> <span data-editable="roadmapTitleAccent" data-edit-label="عنوان خارطة الطريق">وإلى أين نتجه؟</span></h2>
+        <p>الشفافية في مرحلة المشروع جزء من قوة القصة الاستثمارية؛ المنتج متقدم وظيفيًا، لكن التحقق التجاري ما زال أمامه.</p>
+      </div>
+      <div class="stage-panel reveal">
+        <div class="stage-current"><div class="stage-chip"><i></i> Current Stage</div><h3>Advanced Working MVP</h3><p>مرحلة تطوير واختبار قبل الإطلاق التجاري.</p><div class="stage-facts"><div><b>Gmail</b><span>اختبار إرسال داخلي</span></div><div><b>Outlook</b><span>اختبار إرسال داخلي</span></div><div><b>Customers</b><span>لا يوجد عملاء حاليون</span></div><div><b>Revenue</b><span>لا توجد إيرادات تجارية مثبتة</span></div></div></div>
+        <div class="stage-side"><div class="stage-side-icon">↗</div><h3>المرحلة التالية</h3><p>Controlled Beta مع شركاء تصميم وعملاء تجريبيين، ثم إثبات الاستخدام المتكرر والاستعداد للدفع.</p><span>Build → Validate → Monetize → Scale</span></div>
+      </div>
+      <div class="roadmap-timeline reveal">
+        <article><span class="roadmap-period">Now — 90 Days</span><h3>Validate</h3><p>مقابلات العملاء، إغلاق مخاطر الإطلاق، شركاء تجريبيون، أول حملات حقيقية.</p><b>النتيجة: إثبات المشكلة والاستخدام.</b></article>
+        <article><span class="roadmap-period">3–6 Months</span><h3>Monetize</h3><p>تحسين Onboarding، اختبار الخطط، تحويل المستخدمين إلى اشتراكات، توثيق قصص الاستخدام.</p><b>النتيجة: أول إيراد متكرر واحتفاظ قابل للقياس.</b></article>
+        <article><span class="roadmap-period">6–12 Months</span><h3>Specialize</h3><p>تطوير Playbooks لمراكز التدريب والأكاديميات، وتحسين Agency Mode والتكاملات المطلوبة فعليًا.</p><b>النتيجة: تميّز رأسي أوضح.</b></article>
+        <article><span class="roadmap-period">12–24 Months</span><h3>Expand</h3><p>التوسع إلى قطاعات وأسواق أخرى، وتكاملات إضافية، وخيارات إرسال تناسب أحجام العملاء المختلفة.</p><b>النتيجة: نمو منضبط قابل للاستدامة.</b></article>
+      </div>
+    </section>
+
+
+    <!-- EXPANSION & FUTURE ADDITIONS -->
+    <section class="section deep-section expansion-section" id="expansion">
+      <div class="section-head reveal">
+        <div class="eyebrow">20 / Product Evolution</div>
+        <h2>ما الذي يمكن إضافته بعد إثبات الأساس؟ <span>خارطة توسع منضبطة.</span></h2>
+        <p>الإضافات التالية ليست كلها وظائف معلنة على أنها جاهزة اليوم. إنها فرص تطوير يمكن ترتيبها بحسب طلب العملاء ونتائج الاختبار وتكلفة التنفيذ.</p>
+      </div>
+      <div class="evolution-grid">
+        <article class="evolution-card current reveal"><span class="evolution-status">Current scope</span><h3>تحسين الأساس الحالي</h3><ul><li>Onboarding أقصر لأول حملة.</li><li>موثوقية الإرسال ومعالجة الأخطاء.</li><li>تجربة RTL وقوالب القطاع.</li><li>مؤشرات دقيقة ومفهومة.</li><li>تجربة الدعم والتوثيق.</li></ul></article>
+        <article class="evolution-card next reveal"><span class="evolution-status">Validate next</span><h3>Vertical Playbooks</h3><ul><li>حزم جاهزة لمراكز التدريب.</li><li>رحلات ترحيب وتذكير وتقييم.</li><li>حزم للوكالات وإدارة العملاء.</li><li>قوالب عربية لكل قطاع.</li><li>مقاييس أداء مجمعة مع حماية الخصوصية.</li></ul></article>
+        <article class="evolution-card future reveal"><span class="evolution-status">Future opportunities</span><h3>Integrations & Channels</h3><ul><li>Google Sheets Sync أعمق.</li><li>API وWebhooks موثقة للمطورين.</li><li>تكاملات منصات التجارة الإلكترونية.</li><li>خيارات WhatsApp وSMS بعد دراسة المتطلبات الرسمية.</li><li>مسارات إرسال بديلة للعملاء ذوي الأحجام الكبيرة.</li></ul></article>
+        <article class="evolution-card future reveal"><span class="evolution-status">Future opportunities</span><h3>Intelligence & Agency Scale</h3><ul><li>توصيات سياقية حسب الصناعة.</li><li>تجارب A/B أكثر تقدمًا.</li><li>تقارير أداء مجمعة عبر Workspaces مع عزل البيانات.</li><li>صلاحيات ومراجعات موافقة أكثر تفصيلًا.</li><li>قوالب Playbooks قابلة للبيع والتوزيع.</li></ul></article>
+      </div>
+      <div class="roadmap-gate reveal"><b>قاعدة اختيار الإضافة التالية:</b><span>لا تُبنى الميزة لمجرد أنها تبدو جذابة؛ تُبنى عندما تتكرر مشكلة لدى العملاء، ويكون لها أثر واضح على التفعيل أو الاستخدام المتكرر أو الاستعداد للدفع.</span></div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section deep-section faq-section" id="faq">
+      <div class="section-head center reveal">
+        <div class="eyebrow">21 / Questions & Clarity</div>
+        <h2>أسئلة مهمة حول MailForge <span>وما الذي تقدمه فعلًا.</span></h2>
+        <p>إجابات مختصرة تساعد العملاء والشركاء والمستثمرين على فهم طبيعة المنتج وحدوده.</p>
+      </div>
+      <div class="faq-list reveal">
+        <details><summary>هل MailForge مجرد أداة إرسال جماعي؟</summary><p>لا. نطاقها يشمل إدارة القوالب والمحرر والجمهور والحملات والأتمتة والتحليلات والفريق والوكالات. الإرسال جزء من دورة تشغيل أوسع.</p></details>
+        <details><summary>هل أحتاج إلى إعداد SMTP أو مشاركة كلمة مرور البريد؟</summary><p>نموذج الربط الموصوف يعتمد على OAuth مع Gmail/Google Workspace وOutlook/Microsoft. لا تطلب MailForge كلمة مرور البريد مباشرة ضمن هذا المسار، ولا يتطلب هذا النموذج إعداد SMTP منفصلًا من المستخدم.</p></details>
+        <details><summary>هل تضمن MailForge وصول كل الرسائل إلى Primary Inbox؟</summary><p>لا. لا يمكن ضمان ذلك عبر أي وعد تسويقي عام. مزود البريد وسمعة النطاق والمصادقة وجودة القائمة والمحتوى وتفاعل المستلم كلها عوامل مؤثرة.</p></details>
+        <details><summary>هل حد 400 رسالة يوميًا هو حد Google أو Microsoft؟</summary><p>لا. هذا سقف داخلي موصوف في تصميم MailForge للحساب المرتبط. يجب احترام حدود المزود الفعلية، واستخدام الحد الأقل بين سياسة MailForge وحدود Google أو Microsoft للحساب المعني.</p></details>
+        <details><summary>هل بيانات العملاء تبقى على جهاز المستخدم فقط؟</summary><p>لا ينبغي افتراض ذلك. طريقة التخزين تختلف حسب نوع البيانات وإعدادات الخدمة. يجب مراجعة سياسة الخصوصية وتوضيح مكان تخزين جهات الاتصال والقوالب والملفات وسجلات التتبع قبل تقديم وعود عن الخصوصية.</p></details>
+        <details><summary>هل تتبع فتح الرسالة يعني أن الشخص قرأها؟</summary><p>ليس بالضرورة. تقنيات حماية الخصوصية وتحميل الصور الآلي قد تؤثر في Open Tracking. لذلك تُعامل معدلات الفتح كمؤشر اتجاهي، ويُقرأ النقر والارتداد وسلوك الحملة في سياقها.</p></details>
+        <details><summary>هل كل أدوات الذكاء الاصطناعي العشر مستقرة ومثبتة تجاريًا؟</summary><p>الدليل يوثق عشر وظائف AI ضمن نطاق المنتج، لكن يجب اختبار كل تدفق ومراجعة جودة مخرجاته وتكلفته قبل وصفه بأنه مكتمل إنتاجيًا أو تقديم نتائج أداء عنه.</p></details>
+        <details><summary>هل MailForge متاحة تجاريًا ولديها عملاء مدفوعون؟</summary><p>وفق الحالة التي قدمها صاحب المشروع عند إعداد هذه النسخة: المنتج في مرحلة التطوير، لا يوجد عملاء حاليون، وقد أُجريت اختبارات إرسال داخلية عبر Gmail وOutlook. لا توجد Traction تجارية مثبتة في هذه المادة.</p></details>
+        <details><summary>ما القطاع الأول المقترح للإطلاق؟</summary><p>مراكز التدريب والأكاديميات كفرضية دخول سوق أولى، لأن رحلة الطالب توفر استخدامات متكررة للترحيب والتذكير والمتابعة والتقييم. يجب التحقق من الفرضية بمقابلات وتجارب مدفوعة.</p></details>
+      </div>
+    </section>
+
+    <!-- THE ASK / CLOSING -->
+    <section class="closing-section" id="closing">
+      <div class="closing-orbit"></div>
+      <div class="closing-inner reveal">
+        <img src="assets/mailforge-logo.png" data-media-slot="brandLogo" alt="شعار MailForge">
+        <div class="eyebrow">The Vision</div>
+        <h2><span data-editable="closingTitleMain" data-edit-label="عنوان الختام">نجعل التواصل عبر البريد</span><br><span data-editable="closingTitleAccent" data-edit-label="عنوان الرؤية الختامية">أبسط، أذكى، وأكثر تنظيمًا.</span></h2>
+        <p data-editable="closingBody" data-edit-label="وصف الرؤية الختامية">MailForge تبدأ من احتياج واضح: مساعدة الأعمال العربية على إدارة حملات البريد الإلكتروني من مكان واحد. والخطوة التالية هي إثبات القيمة مع العملاء، ثم بناء نمو مستدام.</p>
+        <div class="closing-actions"><a class="btn btn-primary" href="https://mailforge-skillak.lovable.app" target="_blank" rel="noopener">زيارة المنصة الحالية <span>↗</span></a><a class="btn btn-ghost" href="#top">العودة إلى البداية ↑</a></div>
+        <div class="closing-mantra"><span>CREATE</span><i>·</i><span>SEND</span><i>·</i><span>TRACK</span><i>·</i><span>IMPROVE</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#top"><img src="assets/mailforge-logo.png" data-media-slot="brandLogo" alt=""><b>MailForge</b><span>by Skillak</span></a>
+    <p data-editable="footerNote" data-edit-label="ملاحظة أسفل الموقع">عرض شامل لمنظومة MailForge — الوظائف والمرحلة الحالية والفرص المستقبلية، مع تمييز ما هو موثق عما هو مقترح.</p>
+    <a href="https://mailforge-skillak.lovable.app" target="_blank" rel="noopener">mailforge-skillak.lovable.app ↗</a>
+    <a class="footer-admin-link" href="admin.html">لوحة إدارة المحتوى ↗</a>
+    <small>© <span id="year"></span> MailForge by Skillak. All rights reserved.</small>
+  </footer>
+
+
+  <!-- Image lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="معاينة لقطة المنتج">
+    <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق">×</button>
+    <figure><img src="" alt="" id="lightboxImage"><figcaption id="lightboxCaption"></figcaption></figure>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

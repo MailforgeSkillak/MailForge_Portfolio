@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0A0F1D">
+  <title>لوحة إدارة MailForge Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/mailforge-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="side-brand" href="index.html">
+        <img src="assets/mailforge-logo.png" alt="MailForge logo">
+        <span><b>MailForge</b><small>Portfolio CMS</small></span>
+      </a>
+      <div class="side-label">مساحة الإدارة</div>
+      <nav class="side-nav" aria-label="قائمة الإدارة">
+        <button class="nav-item active" data-view="overview"><span>▦</span> نظرة عامة</button>
+        <button class="nav-item" data-view="content"><span>✎</span> محتوى الموقع</button>
+        <button class="nav-item" data-view="media"><span>▧</span> الصور والمعرض</button>
+        <button class="nav-item" data-view="publish"><span>↥</span> النشر على GitHub</button>
+        <button class="nav-item" data-view="backup"><span>◫</span> النسخ الاحتياطي</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="storage-mini"><span class="pulse-dot"></span><div><b>Static Portfolio</b><small>GitHub Repo + Cloudflare Pages</small></div></div>
+        <a href="index.html" class="view-site">↗ معاينة الموقع</a>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="فتح القائمة">☰</button>
+        <div><div class="top-kicker">MAILFORGE BY SKILLAK</div><h1 id="pageTitle">نظرة عامة</h1></div>
+        <div class="top-actions">
+          <span class="static-badge"><i></i> وضع الاستضافة الثابتة</span>
+          <a class="top-link" href="index.html">عرض الموقع ↗</a>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <section class="view-panel active" id="view-overview">
+          <div class="welcome-banner">
+            <div class="welcome-copy">
+              <span class="eyebrow">PORTFOLIO CONTROL CENTER</span>
+              <h2>مرحبًا بك في لوحة إدارة MailForge.</h2>
+              <p>حدّث قصة المشروع، بدّل لقطات المنتج، وأرسل التغييرات إلى مستودع GitHub الذي يستضيف الموقع.</p>
+              <div class="banner-actions"><button class="btn btn-primary" data-go="content">تعديل المحتوى <b>←</b></button><button class="btn btn-light" data-go="publish">إعداد النشر</button></div>
+            </div>
+            <div class="welcome-art" aria-hidden="true"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-logo">✉</div><span class="float-chip chip-a">Content</span><span class="float-chip chip-b">Media</span><span class="float-chip chip-c">Publish</span></div>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card"><span class="stat-icon blue">▧</span><div><small>مواضع الصور المعروفة</small><strong id="statSlots">16</strong><em>مرتبطة بأقسام الموقع</em></div></article>
+            <article class="stat-card"><span class="stat-icon violet">▤</span><div><small>لقطات إضافية</small><strong id="statCustom">0</strong><em>في معرض المنتج</em></div></article>
+            <article class="stat-card"><span class="stat-icon green">✎</span><div><small>نصوص معدّلة</small><strong id="statText">0</strong><em>تعديلات محلية غير منشورة</em></div></article>
+            <article class="stat-card"><span class="stat-icon orange">◉</span><div><small>حالة النشر</small><strong class="status-word" id="statPublish">محلي</strong><em id="lastPublish">لم يتم تسجيل نشر من هذه اللوحة</em></div></article>
+            <article class="stat-card"><span class="stat-icon cyan">▤</span><div><small>المسودات على هذا الجهاز</small><strong id="statStorage">جارٍ القياس</strong><em>LocalStorage / IndexedDB</em></div></article>
+          </div>
+
+          <div class="two-column">
+            <article class="panel-card">
+              <div class="card-heading"><div><span class="eyebrow">CONTENT HEALTH</span><h3>جاهزية المحتوى</h3></div><span class="heading-icon">✓</span></div>
+              <div class="health-row"><span>المحتوى الأساسي</span><b id="healthText">جاهز</b></div><div class="meter"><i id="meterText"></i></div>
+              <div class="health-row"><span>صور المنتج</span><b id="healthImages">16 / 16</b></div><div class="meter"><i id="meterImages"></i></div>
+              <div class="health-row"><span>ملف النشر</span><b id="healthJson">موجود</b></div><div class="meter"><i id="meterJson"></i></div>
+              <p class="muted-note">هذه مؤشرات اكتمال ملفات الـPortfolio، وليست مؤشرات أداء أو نتائج تجارية للمنصة.</p>
+            </article>
+            <article class="panel-card">
+              <div class="card-heading"><div><span class="eyebrow">QUICK ACTIONS</span><h3>إجراءات سريعة</h3></div><span class="heading-icon">✦</span></div>
+              <div class="quick-actions">
+                <button data-go="media"><span>▧</span><b>استبدال صورة</b><small>تحديث لقطة من واجهة MailForge</small></button>
+                <button data-go="content"><span>✎</span><b>تعديل عنوان</b><small>تغيير القصة أو وصف المنتج</small></button>
+                <button data-go="publish"><span>↥</span><b>نشر التحديث</b><small>إرسال المحتوى إلى GitHub</small></button>
+                <button data-go="backup"><span>◫</span><b>نسخة احتياطية</b><small>تصدير ملف JSON أو استيراده</small></button>
+              </div>
+            </article>
+          </div>
+
+          <article class="panel-card roadmap-card">
+            <div class="card-heading"><div><span class="eyebrow">RECOMMENDED WORKFLOW</span><h3>طريقة العمل المقترحة</h3></div><span class="small-tag">بدون Backend</span></div>
+            <div class="workflow-steps">
+              <div><i>01</i><b>عدّل</b><small>النصوص والصور من هذه اللوحة</small></div><span>←</span>
+              <div><i>02</i><b>احفظ</b><small>احتفظ بمسودة محلية</small></div><span>←</span>
+              <div><i>03</i><b>انشر</b><small>Commit إلى GitHub</small></div><span>←</span>
+              <div><i>04</i><b>تحقق</b><small>راجع Cloudflare Pages</small></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="view-panel" id="view-content">
+          <div class="view-intro"><div><span class="eyebrow">SITE COPY</span><h2>محتوى الموقع</h2><p>عدّل نصوص القصة والعناوين والأقسام. القيم تحفظ كمسودة في هذا المتصفح حتى تنشرها.</p></div><button class="btn btn-primary" id="saveTextDraft">حفظ المسودة</button></div>
+          <div class="content-toolbar"><input type="search" id="contentSearch" placeholder="ابحث عن عنوان أو قسم…"><span id="contentCount">تحميل الحقول…</span></div>
+          <div id="contentFields" class="content-fields"></div>
+        </section>
+
+        <section class="view-panel" id="view-media">
+          <div class="view-intro"><div><span class="eyebrow">MEDIA LIBRARY</span><h2>الصور والمعرض</h2><p>كل صورة لها موضع معروف داخل الموقع. استبدلها دون تغيير بقية الهوية البصرية.</p></div><span class="small-tag" id="mediaCounter">16 موضعًا</span></div>
+          <div class="media-guidance"><b>معيار الصور</b><span>استخدم لقطات حقيقية من MailForge. PNG أو JPG أو WEBP، بحد أقصى 8MB للصورة. سيتم ضغطها إلى WEBP قبل الحفظ.</span></div>
+          <div id="mediaSlots" class="media-grid"></div>
+          <article class="panel-card add-gallery-card">
+            <div class="card-heading"><div><span class="eyebrow">CUSTOM GALLERY</span><h3>إضافة لقطة شاشة جديدة</h3><p>أضف شاشة جديدة إلى معرض المنتج دون تعديل الكود.</p></div><span class="heading-icon">＋</span></div>
+            <div class="add-gallery-form">
+              <label>عنوان الصورة<input id="newImageTitle" type="text" maxlength="80" placeholder="مثال: إعدادات فريق العمل"></label>
+              <label>وصف مختصر<input id="newImageCaption" type="text" maxlength="160" placeholder="ما الذي توضحه هذه الشاشة؟"></label>
+              <label class="upload-drop"><input id="newImageFile" type="file" accept="image/png,image/jpeg,image/webp"><span>＋</span><b>اختر لقطة شاشة</b><small>PNG / JPG / WEBP — حتى 8MB</small></label>
+              <button class="btn btn-primary" id="addGalleryImage">إضافة إلى المعرض</button>
+            </div>
+            <div id="customMediaList" class="custom-media-list"></div>
+          </article>
+        </section>
+
+        <section class="view-panel" id="view-publish">
+          <div class="view-intro"><div><span class="eyebrow">GITHUB PAGES DELIVERY</span><h2>النشر والتخزين</h2><p>الموقع ثابت، ومستودع GitHub هو مكان حفظ الملفات والصور. لا تحتاج إلى خادم خاص لهذا الـPortfolio.</p></div><span class="small-tag">Static + GitHub</span></div>
+          <div class="architecture-banner"><div class="arch-node"><b>GitHub Repository</b><small>Source · Images · Content · Version History</small></div><span>→</span><div class="arch-node active"><b>Cloudflare Pages</b><small>Static Hosting · CDN · Auto Deploy</small></div></div>
+          <div class="panel-card github-settings">
+            <div class="card-heading"><div><span class="eyebrow">REPOSITORY SETTINGS</span><h3>إعداد مستودع GitHub</h3><p>أدخل بيانات المستودع الذي يحتوي على index.html وملفات الموقع.</p></div><span class="heading-icon">⌘</span></div>
+            <div class="github-form">
+              <label>اسم المستخدم أو المؤسسة<input id="ghOwner" type="text" autocomplete="off" placeholder="your-github-username"></label>
+              <label>اسم المستودع<input id="ghRepo" type="text" autocomplete="off" placeholder="mailforge-portfolio"></label>
+              <label>الفرع<input id="ghBranch" type="text" value="main" autocomplete="off"></label>
+              <label>مسار ملف المحتوى<input id="ghPath" type="text" value="portfolio-content.json" readonly><small>ثابت في جذر الموقع حتى يستطيع index.html قراءته.</small></label>
+              <label class="full-field">Fine-grained Personal Access Token<input id="ghToken" type="password" autocomplete="new-password" spellcheck="false" placeholder="github_pat_…"><small>لا يتم حفظ هذا الرمز في المتصفح أو ملف الموقع، ويُمسح بعد النشر.</small></label>
+            </div>
+            <div class="token-help"><b>صلاحيات الرمز المطلوبة:</b> Repository access لمستودع واحد فقط، ثم Contents: Read and write وMetadata: Read. لا تستخدم Token بصلاحيات Account كاملة، ولا تضعه داخل ملفات المشروع.</div>
+            <div class="publish-actions"><button class="btn btn-outline" id="testGithub">اختبار الاتصال والوصول</button><button class="btn btn-primary" id="publishGithub">حفظ التحديث في GitHub ↗</button><button class="btn btn-outline" id="downloadContentFromPublish">تنزيل نسخة المحتوى</button></div>
+            <div id="publishStatus" class="publish-status" role="status" aria-live="polite"></div>
+          </div>
+          <div class="two-column publish-notes">
+            <article class="panel-card"><h3>ماذا يحدث بعد النشر؟</h3><p>تُرفع الصور الجديدة إلى <code>assets/managed/</code> ويُحدّث ملف <code>portfolio-content.json</code> في Commit واحد. إذا ربطت المستودع بمشروع Cloudflare Pages، فكل تحديث على الفرع المحدد يطلق نشرًا تلقائيًا للموقع.</p></article>
+            <article class="panel-card"><h3>ماذا لا يفعل هذا النظام؟</h3><p>GitHub هنا مستودع مصدر وملفات عامة للموقع، وليس مساحة تخزين لبيانات زوار أو عملاء. لا ترفع قوائم بريد أو مستندات خاصة أو معلومات حساسة. إذا احتجت ملفات خاصة لاحقًا، أنشئ Backend وتخزينًا بصلاحيات حقيقية.</p></article>
+          </div>
+        </section>
+
+        <section class="view-panel" id="view-backup">
+          <div class="view-intro"><div><span class="eyebrow">BACKUP & RECOVERY</span><h2>النسخ الاحتياطي والاستعادة</h2><p>احتفظ بنسخة من المحتوى والصور قبل كل تحديث كبير.</p></div><span class="small-tag">Portable JSON</span></div>
+          <div class="backup-grid">
+            <article class="backup-card"><span class="backup-icon green">↓</span><h3>تصدير نسخة كاملة</h3><p>تجميع النصوص والصور الحالية ولقطات المعرض الإضافية داخل ملف JSON واحد.</p><button class="btn btn-primary" id="exportBackup">تنزيل النسخة الاحتياطية</button></article>
+            <article class="backup-card"><span class="backup-icon blue">↑</span><h3>استعادة نسخة سابقة</h3><p>استيراد ملف JSON تم تصديره من لوحة الإدارة، مع معاينة التغييرات قبل النشر.</p><label class="btn btn-outline file-button">اختيار ملف JSON<input id="importBackup" type="file" accept="application/json,.json" hidden></label></article>
+            <article class="backup-card"><span class="backup-icon orange">↺</span><h3>استعادة المحتوى الافتراضي</h3><p>حذف المسودات المحلية والعودة إلى ملفات النسخة المنشورة.</p><button class="btn btn-danger" id="resetDraft">استعادة الافتراضي</button></article>
+          </div>
+          <div class="backup-note"><b>نصيحة:</b> احتفظ بملف JSON بعد كل نشر ناجح، وكذلك بفرع GitHub أو Commit سابق للعودة إليه إذا احتجت إلى استرجاع نسخة الموقع.</div>
+          <div class="activity-card"><div class="card-heading"><div><span class="eyebrow">LOCAL ACTIVITY</span><h3>آخر نشاط على هذا المتصفح</h3></div></div><div id="activityLog" class="activity-log"><p>لا يوجد نشاط مسجل حتى الآن.</p></div></div>
+        </section>
+
+        <footer class="admin-footer"><span>MailForge by Skillak · Portfolio CMS</span><span>المحتوى التعريفي فقط — لا يحتوي على بيانات تشغيل المنصة.</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="admin-app.js"></script>
+</body>
+</html>
