@@ -27,7 +27,7 @@
         <button class="nav-item" data-view="backup"><span>◫</span> النسخ الاحتياطي</button>
       </nav>
       <div class="sidebar-bottom">
-        <div class="storage-mini"><span class="pulse-dot"></span><div><b>Static Portfolio</b><small>GitHub Repo + Cloudflare Pages</small></div></div>
+        <div class="storage-mini"><span class="pulse-dot"></span><div><b>Static Portfolio</b><small>GitHub Repo + AWS Amplify</small></div></div>
         <a href="index.html" class="view-site">↗ معاينة الموقع</a>
       </div>
     </aside>
@@ -87,7 +87,7 @@
               <div><i>01</i><b>عدّل</b><small>النصوص والصور من هذه اللوحة</small></div><span>←</span>
               <div><i>02</i><b>احفظ</b><small>احتفظ بمسودة محلية</small></div><span>←</span>
               <div><i>03</i><b>انشر</b><small>Commit إلى GitHub</small></div><span>←</span>
-              <div><i>04</i><b>تحقق</b><small>راجع Cloudflare Pages</small></div>
+              <div><i>04</i><b>تحقق</b><small>راجع AWS Amplify</small></div>
             </div>
           </article>
         </section>
@@ -99,7 +99,7 @@
         </section>
 
         <section class="view-panel" id="view-media">
-          <div class="view-intro"><div><span class="eyebrow">MEDIA LIBRARY</span><h2>الصور والمعرض</h2><p>كل صورة لها موضع معروف داخل الموقع. استبدلها دون تغيير بقية الهوية البصرية.</p></div><span class="small-tag" id="mediaCounter">16 موضعًا</span></div>
+          <div class="view-intro"><div><span class="eyebrow">MEDIA LIBRARY</span><h2>الصور والمعرض</h2><p>كل صورة لها موضع معروف داخل الموقع. استبدلها دون تغيير بقية الهوية البصرية.</p></div><span class="small-tag" id="mediaCounter">23 موضعًا</span></div>
           <div class="media-guidance"><b>معيار الصور</b><span>استخدم لقطات حقيقية من MailForge. PNG أو JPG أو WEBP، بحد أقصى 8MB للصورة. سيتم ضغطها إلى WEBP قبل الحفظ.</span></div>
           <div id="mediaSlots" class="media-grid"></div>
           <article class="panel-card add-gallery-card">
@@ -115,13 +115,13 @@
         </section>
 
         <section class="view-panel" id="view-publish">
-          <div class="view-intro"><div><span class="eyebrow">GITHUB PAGES DELIVERY</span><h2>النشر والتخزين</h2><p>الموقع ثابت، ومستودع GitHub هو مكان حفظ الملفات والصور. لا تحتاج إلى خادم خاص لهذا الـPortfolio.</p></div><span class="small-tag">Static + GitHub</span></div>
-          <div class="architecture-banner"><div class="arch-node"><b>GitHub Repository</b><small>Source · Images · Content · Version History</small></div><span>→</span><div class="arch-node active"><b>Cloudflare Pages</b><small>Static Hosting · CDN · Auto Deploy</small></div></div>
+          <div class="view-intro"><div><span class="eyebrow">AWS AMPLIFY DELIVERY</span><h2>النشر والتخزين</h2><p>الموقع ثابت، ومستودع GitHub هو مكان حفظ الملفات والصور. لا تحتاج إلى خادم خاص لهذا الـPortfolio.</p></div><span class="small-tag">Static + GitHub</span></div>
+          <div class="architecture-banner"><div class="arch-node"><b>GitHub Repository</b><small>Source · Images · Content · Version History</small></div><span>→</span><div class="arch-node active"><b>AWS Amplify Hosting</b><small>Static Hosting · Git Integration · Auto Deploy</small></div></div>
           <div class="panel-card github-settings">
             <div class="card-heading"><div><span class="eyebrow">REPOSITORY SETTINGS</span><h3>إعداد مستودع GitHub</h3><p>أدخل بيانات المستودع الذي يحتوي على index.html وملفات الموقع.</p></div><span class="heading-icon">⌘</span></div>
             <div class="github-form">
-              <label>اسم المستخدم أو المؤسسة<input id="ghOwner" type="text" autocomplete="off" placeholder="your-github-username"></label>
-              <label>اسم المستودع<input id="ghRepo" type="text" autocomplete="off" placeholder="mailforge-portfolio"></label>
+              <label>اسم المستخدم أو المؤسسة<input id="ghOwner" type="text" autocomplete="off" placeholder="MailforgeSkillak"></label>
+              <label>اسم المستودع<input id="ghRepo" type="text" autocomplete="off" placeholder="MailForge_Portfolio"></label>
               <label>الفرع<input id="ghBranch" type="text" value="main" autocomplete="off"></label>
               <label>مسار ملف المحتوى<input id="ghPath" type="text" value="portfolio-content.json" readonly><small>ثابت في جذر الموقع حتى يستطيع index.html قراءته.</small></label>
               <label class="full-field">Fine-grained Personal Access Token<input id="ghToken" type="password" autocomplete="new-password" spellcheck="false" placeholder="github_pat_…"><small>لا يتم حفظ هذا الرمز في المتصفح أو ملف الموقع، ويُمسح بعد النشر.</small></label>
@@ -131,7 +131,7 @@
             <div id="publishStatus" class="publish-status" role="status" aria-live="polite"></div>
           </div>
           <div class="two-column publish-notes">
-            <article class="panel-card"><h3>ماذا يحدث بعد النشر؟</h3><p>تُرفع الصور الجديدة إلى <code>assets/managed/</code> ويُحدّث ملف <code>portfolio-content.json</code> في Commit واحد. إذا ربطت المستودع بمشروع Cloudflare Pages، فكل تحديث على الفرع المحدد يطلق نشرًا تلقائيًا للموقع.</p></article>
+            <article class="panel-card"><h3>ماذا يحدث بعد النشر؟</h3><p>تُرفع الصور الجديدة إلى <code>assets/managed/</code> ويُحدّث ملف <code>portfolio-content.json</code> في Commit واحد. إذا ربطت المستودع بتطبيق AWS Amplify، فكل تحديث على الفرع المحدد يطلق بناءً ونشرًا تلقائيًا للموقع.</p></article>
             <article class="panel-card"><h3>ماذا لا يفعل هذا النظام؟</h3><p>GitHub هنا مستودع مصدر وملفات عامة للموقع، وليس مساحة تخزين لبيانات زوار أو عملاء. لا ترفع قوائم بريد أو مستندات خاصة أو معلومات حساسة. إذا احتجت ملفات خاصة لاحقًا، أنشئ Backend وتخزينًا بصلاحيات حقيقية.</p></article>
           </div>
         </section>

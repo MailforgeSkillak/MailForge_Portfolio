@@ -1,4 +1,4 @@
-/* MailForge Portfolio CMS — static-first, Git-backed, Cloudflare Pages friendly.
+/* MailForge Portfolio CMS — static-first, Git-backed, AWS Amplify friendly.
    No API secret or GitHub token is stored in source code or localStorage. */
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -28,7 +28,14 @@ const MEDIA = [
   ['analyticsSummary','ملخص التحليلات','assets/analytics-summary.png','قسم Analytics — المؤشرات التنفيذية'],
   ['analyticsDelivery','نشاط الإرسال وحالات التسليم','assets/analytics-delivery.png','قسم Analytics — النشاط والنطاقات والتسليم'],
   ['analyticsBestTime','أفضل وقت للإرسال','assets/analytics-best-time.png','قسم Analytics — التوقيت والروابط'],
-  ['mediaLibrary','مكتبة الوسائط والملفات','assets/media-library.png','قسم Media Library — الملفات والصور']
+  ['mediaLibrary','مكتبة الوسائط والملفات','assets/media-library.png','قسم Media Library — الملفات والصور'],
+  ['workspaceCampaigns','لقطة مساحة العمل — الحملات','assets/workspace-campaigns.png','كتالوج الحملات ومعرض أحدث لقطات مساحة العمل'],
+  ['workspaceContacts','لقطة مساحة العمل — جهات الاتصال','assets/workspace-contacts.png','كتالوج الجمهور ومعرض أحدث لقطات مساحة العمل'],
+  ['workspaceAnalytics','لقطة مساحة العمل — التحليلات','assets/workspace-analytics.png','كتالوج التحليلات ومعرض أحدث لقطات مساحة العمل'],
+  ['workspaceSending','لقطة مساحة العمل — حسابات الإرسال','assets/workspace-sending.png','كتالوج إعدادات الإرسال ومعرض أحدث لقطات مساحة العمل'],
+  ['workspaceTeam','لقطة مساحة العمل — الفريق والصلاحيات','assets/workspace-team.png','كتالوج الفريق والصلاحيات ومعرض أحدث لقطات مساحة العمل'],
+  ['workspaceGuide','لقطة مساحة العمل — دليل المنصة','assets/workspace-guide.png','كتالوج الدليل ومعرض أحدث لقطات مساحة العمل'],
+  ['workspaceSupport','لقطة مساحة العمل — مركز الدعم','assets/workspace-support.png','كتالوج الدعم ومعرض أحدث لقطات مساحة العمل']
 ].map(([key,label,src,placement])=>({key,label,src,placement}));
 
 let published = {format:'mailforge-portfolio-content',version:2,content:{},images:{},customGallery:[]};
@@ -454,7 +461,7 @@ async function publishGithub(){
     published=config;localContent={...config.content};customGallery=[...config.customGallery];removedImageSlots.clear();localStorage.removeItem(REMOVED_MEDIA_KEY);
     $('#statPublish').textContent='تم النشر';$('#lastPublish').textContent=`Commit ${commit.sha.slice(0,7)}`;
     logActivity(`نشر الموقع إلى GitHub — ${commit.sha.slice(0,7)}`);
-    showPublishStatus(`نجح النشر. تم إنشاء Commit ${commit.sha.slice(0,7)} وتحديث ملف المحتوى و${imageCount} صورة. إذا كان Cloudflare Pages مرتبطًا بالفرع، سيبدأ النشر التلقائي وقد يحتاج بعض الوقت حتى يظهر التحديث.`);
+    showPublishStatus(`نجح النشر. تم إنشاء Commit ${commit.sha.slice(0,7)} وتحديث ملف المحتوى و${imageCount} صورة. إذا كان AWS Amplify مرتبطًا بالفرع، سيبدأ النشر التلقائي وقد يحتاج بعض الوقت حتى يظهر التحديث.`);
     toast('تم إرسال التحديث إلى GitHub بنجاح.');
   }catch(err){
     showPublishStatus(`فشل النشر: ${err.message}. تحقق من صلاحيات Contents: Read and write واسم الفرع.`, 'error');
@@ -491,13 +498,13 @@ $('#testGithub').addEventListener('click',testGithubConnection);
 
 function loadGitHubSettings(){
   const settings=readJSON(GH_SETTINGS_KEY,{});
-  $('#ghOwner').value=settings.owner||'';$('#ghRepo').value=settings.repo||'';$('#ghBranch').value=settings.branch||'main';$('#ghPath').value=settings.path||'portfolio-content.json';
+  $('#ghOwner').value=settings.owner||'MailforgeSkillak';$('#ghRepo').value=settings.repo||'MailForge_Portfolio';$('#ghBranch').value=settings.branch||'main';$('#ghPath').value=settings.path||'portfolio-content.json';
 }
 
 async function init(){
   await loadSources();
   const storedSettings=readJSON(GH_SETTINGS_KEY,{});loadGitHubSettings();
   buildTextFields();await renderMediaCards();await renderCustomMedia();renderActivity();updateOverview();
-  if(!Object.keys(textDefaults).length){toast('تعذر تحميل index.html. افتح لوحة الإدارة عبر Cloudflare Pages أو خادم محلي، وليس file://.','error');}
+  if(!Object.keys(textDefaults).length){toast('تعذر تحميل index.html. افتح لوحة الإدارة عبر AWS Amplify أو خادم محلي، وليس file://.','error');}
 }
 init().catch(error=>{console.error(error);toast(error.message,'error');});

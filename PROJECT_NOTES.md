@@ -22,7 +22,7 @@ A detailed, interactive, long-form project showcase for MailForge by Skillak. Th
 - SaaS revenue model, current stage, roadmap, expansion opportunities and FAQ.
 
 ## Screenshot inventory
-16 slots are managed through `admin-app.js`. Product screenshots are distributed according to their actual screens: dashboard, onboarding, templates, campaigns, contacts, automation, analytics, campaign results, media.
+23 slots are managed through `admin-app.js`; seven latest workspace screenshots were added to the matching catalog modules and a dedicated gallery. Product screenshots are distributed according to their actual screens: dashboard, onboarding, templates, campaigns, contacts, automation, analytics, campaign results, media.
 
 ## Competitor references in site
 - Mailchimp: https://mailchimp.com/features/
@@ -42,9 +42,16 @@ These official pages are linked as examples of competitor positioning and featur
 - Tracking metrics have known limitations (e.g. opens can be affected by privacy systems and automated image fetching).
 
 ## Hosting
-Static site: GitHub repository as source/media storage + Cloudflare Pages deployment recommended. Do not store private customer data, sender lists, API secrets, or payment details in the public repository.
+Static site: GitHub repository `MailforgeSkillak/MailForge_Portfolio` as source/media storage + AWS Amplify Hosting deployment on branch `main`. Do not store private customer data, sender lists, API secrets, or payment details in the public repository.
 
 ## V6 inventory
 - 23 HTML sections, 37 page/module groups, 10 AI detail cards, 6 vertical playbooks, 5 competitor cards, and 9 FAQs.
 - 62 editable text nodes are automatically discovered by admin CMS via `data-editable`.
 - 16 media slots; repeated screenshots in module cards share the same `data-media-slot` key so a single replacement updates every linked placement.
+
+
+## V7 additions
+- Added seven supplied workspace screenshots: campaigns, contacts, analytics, sending accounts, team/permissions, guide, and support.
+- Added all seven screenshots to the catalog module descriptions and the latest-workspace gallery.
+- Added seven managed media slots; total managed slots: 23.
+- Updated deployment and CMS documentation from the earlier Cloudflare recommendation to the AWS Amplify setup currently used by the owner.
